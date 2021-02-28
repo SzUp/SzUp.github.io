@@ -1,0 +1,1739 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="线性代数基础系列（3）——矩阵与线性方程组, blog">
+    <meta name="description" content="个人博客/机器学习/数据挖掘/考研准备与分享">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>线性代数基础系列（3）——矩阵与线性方程组 | SzUp</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<meta name="generator" content="Hexo 5.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">SzUp</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/cheerup" class="waves-effect waves-light">
+      
+      <i class="fas fa-thumbs-up" style="zoom: 0.6;"></i>
+      
+      <span>考研打卡</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>互动交流</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/contact">
+          
+          <i class="fas fa-comment-lines" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>留言板</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/gossip">
+          
+          <i class="fas fa-comment-smile" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>闲聊吹水</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-robot" style="zoom: 0.6;"></i>
+      
+      <span>特色功能</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/catch-cat">
+          
+          <i class="fas fa-user-circle" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>抓住小猫！</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/about">
+          
+          <i class="fas fa-user-circle" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>关于我</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/friends">
+          
+          <i class="fas fa-address-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>关于好友</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">SzUp</div>
+        <div class="logo-desc">
+            
+            个人博客/机器学习/数据挖掘/考研准备与分享
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/cheerup" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-thumbs-up"></i>
+			
+			考研打卡
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-comments"></i>
+			
+			互动交流
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/contact " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-comment-lines" style="position: absolute;left:50px" ></i>
+			      
+		          <span>留言板</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/gossip " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-comment-smile" style="position: absolute;left:50px" ></i>
+			      
+		          <span>闲聊吹水</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-robot"></i>
+			
+			特色功能
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/catch-cat " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-user-circle" style="position: absolute;left:50px" ></i>
+			      
+		          <span>抓住小猫！</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/about " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-user-circle" style="position: absolute;left:50px" ></i>
+			      
+		          <span>关于我</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/friends " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-address-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>关于好友</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">线性代数基础系列（3）——矩阵与线性方程组</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%80%83%E7%A0%94/">
+                                <span class="chip bg-color">考研</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                                <span class="chip bg-color">线性代数</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" class="post-category">
+                                线性代数
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-02-21
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-02-23
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    9 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="矩阵与线性方程组"><a href="#矩阵与线性方程组" class="headerlink" title="矩阵与线性方程组"></a>矩阵与线性方程组</h1><p>很快啊（doge），马上到第三章了。第二章我们介绍了矩阵这一个新定义的算子，现在我们要把这个算子投入运用———即解线性方程组中。在解之前呢，需要补充一些前置知识，例如高斯消元法、矩阵的秩等等，综合这些知识，我们就又新点了一个技能点了。</p>
+<h2 id="1-高斯消元法"><a href="#1-高斯消元法" class="headerlink" title="1.高斯消元法"></a>1.高斯消元法</h2><p>高斯消元法….其实大家小学就学过了，就是解二元一次方程组时用的消元法~现在简单帮大家回忆一下= =</p>
+<p><img src="/images/微信截图_20210221101104.png" width="50%" alt="例子"></p>
+<p>我们可以看到，大致分为消元、代回原式两大阶段。我们将消元、代回原式中用到的操作，总结为以下三个操作：</p>
+<h3 id="1-1-同解变形"><a href="#1-1-同解变形" class="headerlink" title="1.1 同解变形"></a>1.1 同解变形</h3><ul>
+<li>1.用非0的数乘以某方程</li>
+<li>2.将一个方程的k倍加到另一方程上</li>
+<li>3.交换两个方程的位置</li>
+</ul>
+<h3 id="1-2-增广矩阵"><a href="#1-2-增广矩阵" class="headerlink" title="1.2 增广矩阵"></a>1.2 增广矩阵</h3><p>增广矩阵是什么？字面意思看，就是把矩阵给扩大了。确实是这样。</p>
+<p>（来自度娘）：增广矩阵（又称扩增矩阵）就是在系数矩阵的右边<strong>添上一列</strong>，这一列是线性方程组的<strong>等号右边的值</strong>。</p>
+<p>我们一般这么表示它：</p>
+<script type="math/tex; mode=display">
+\overline A {\rm{ = } }\left[ {\begin{matrix}
+{ {a_{11} } }& \cdots &{ {a_{1n} } }\\
+ \vdots & \cdots & \vdots \\
+{ {a_{n1} } }& \cdots &{ {a_{nn} } }
+\end{matrix}\begin{matrix}
+{ {b_1} }\\
+ \vdots \\
+{ {b_n} }
+\end{matrix} } \right]</script><p>接下来的第二章，可以理解为使用矩阵的语言描述同解变形，并求解方程组。</p>
+<h2 id="2-初等变换、初等矩阵"><a href="#2-初等变换、初等矩阵" class="headerlink" title="2. 初等变换、初等矩阵"></a>2. 初等变换、初等矩阵</h2><h3 id="2-1-由同解变形到矩阵的初等行变换"><a href="#2-1-由同解变形到矩阵的初等行变换" class="headerlink" title="2.1 由同解变形到矩阵的初等行变换"></a>2.1 由同解变形到矩阵的初等行变换</h3><p>我们在1.1中介绍了方程组的同解变形，现在把它移植到矩阵上。</p>
+<ul>
+<li>1.用非0的数乘矩阵的某一行（倍乘）</li>
+<li>2.将一行的k倍加到另一行上（倍加）</li>
+<li>3.交换矩阵中两行的位置（互换）</li>
+</ul>
+<p>列同理。</p>
+<h3 id="2-2-初等矩阵"><a href="#2-2-初等矩阵" class="headerlink" title="2.2 初等矩阵"></a>2.2 初等矩阵</h3><ul>
+<li>什么是初等矩阵</li>
+</ul>
+<p>单位矩阵经过一次初等变换所得到的矩阵称为初等矩阵。</p>
+<p><img src="/images/f62b0324c936dabddb19f77f41323c2fde191782b917a71ded8c807a9b963ec8.png" width="50%" alt="例子"></p>
+<blockquote>
+<p>每个初等变换可以有两种理解的方法，即从行变换或从列变换变换而来。</p>
+</blockquote>
+<ul>
+<li>初等矩阵的逆</li>
+</ul>
+<p>1.倍加矩阵</p>
+<script type="math/tex; mode=display">
+{\left[ {\begin{matrix}
+1&0&0\\
+0&1&0\\
+0&k&1
+\end{matrix} } \right]^{ - 1} } = \left[ {\begin{matrix}
+1&0&0\\
+0&1&0\\
+0&{ - k}&1
+\end{matrix} } \right]</script><p>2.互换矩阵</p>
+<p>是它本身。</p>
+<script type="math/tex; mode=display">
+{\left[ {\begin{matrix}
+1&0&0\\
+0&0&1\\
+0&1&0
+\end{matrix} } \right]^{ - 1} } = \left[ {\begin{matrix}
+1&0&0\\
+0&0&1\\
+0&1&0
+\end{matrix} } \right]</script><p>3.倍乘矩阵</p>
+<script type="math/tex; mode=display">
+{\left[ {\begin{matrix}
+1&0&0\\
+0&1&0\\
+0&k&1
+\end{matrix} } \right]^{ - 1} } = \left[ {\begin{matrix}
+1&0&0\\
+0&1&0\\
+0&{\frac{1}{k} }&1
+\end{matrix} } \right]</script><h3 id="2-3-初等变换"><a href="#2-3-初等变换" class="headerlink" title="2.3 初等变换"></a>2.3 初等变换</h3><p>初等矩阵<script type="math/tex">P</script>左乘矩阵<script type="math/tex">A</script>，其乘积<script type="math/tex">PA</script>就是矩阵<script type="math/tex">A</script>作一次与<script type="math/tex">P</script>同样的行变换。</p>
+<p><em>初等矩阵<script type="math/tex">P</script>右乘矩阵<script type="math/tex">A</script>，其乘积<script type="math/tex">AP</script>就是矩阵<script type="math/tex">A</script>作一次与<script type="math/tex">P</script>同样的列变换。</em>（基本不用）</p>
+<p><img src="/images/c29cd3453873f590d8b8dcf7fe5d62159190b55fce62531e8e138cf7097c988e.png" width="50%" alt="初等行变换例子"></p>
+<p><img src="/images/d45ea8e16e9cd58875b3c84550c0cdae11a161d8dcd0b32abd3189daaff15a2a.png" width="50%" alt="初等列变换例子"></p>
+<p>详解：</p>
+<p><img src="/images/c3e3255a471869dd6f1508578e53da63a06f864cd473e493bcd9e2ced94501b0.png" width="50%" alt="初等列变换例1"></p>
+<p><img src="/images/9750538ddb8f56d3507f634d34a399f58088f039ade93b6112e3f7a3a6c32548.png" width="50%" alt="初等列变换例2、3"></p>
+<h3 id="2-4-矩阵等价"><a href="#2-4-矩阵等价" class="headerlink" title="2.4 矩阵等价"></a>2.4 矩阵等价</h3><ul>
+<li>定义</li>
+</ul>
+<p>矩阵<script type="math/tex">A</script>经过有限次初等变换变成矩阵<script type="math/tex">B</script>，就称矩阵<script type="math/tex">A</script>与<script type="math/tex">B</script>等价，记作<script type="math/tex">A \cong B</script></p>
+<ul>
+<li>性质</li>
+</ul>
+<ol>
+<li>反身性<br>自己等价自己。<script type="math/tex">A \cong A</script></li>
+<li>对称性<br>若<script type="math/tex">A \cong B</script>，则<script type="math/tex">B \cong A</script></li>
+<li>传递性<br>若<script type="math/tex">A \cong B</script>，<script type="math/tex">B \cong C</script>，则<script type="math/tex">A \cong C</script></li>
+</ol>
+<ul>
+<li>等价标准型</li>
+</ul>
+<p>定义：经过多次变换以后，得到一种最简单的矩阵，就是这个矩阵的左上角是一个单位矩阵，其余元素都是0，那么这个矩阵就是原来矩阵的等价标准型。（摘自度娘）</p>
+<p>只要不是0矩阵，一定能够化成这种形式</p>
+<p><img src="/images/cdd605891c7770c91f12c86fa18a805db3b94eac6c5c4125d0ad081d76f3ad6b.png" width="50%" alt="等价标准型"></p>
+<h3 id="2-5-行阶梯矩阵"><a href="#2-5-行阶梯矩阵" class="headerlink" title="2.5 行阶梯矩阵"></a>2.5 行阶梯矩阵</h3><ul>
+<li>定义</li>
+</ul>
+<p>设<script type="math/tex">A</script>是m*n的矩阵，若满足<br>（1）矩阵如果有零行，则零行都在矩阵的底部。<br>（2）每个非零行的主元（即该行最左边的第一个非零元）所在列的其他元素都为0。</p>
+<p>用人话讲，就是矩阵中每一行的第一个不为零的元素的左边及其所在列以下全为零。</p>
+<p><img src="/images/微信截图_20210221103340.png" width="50%" alt="阶梯型矩阵例子"></p>
+<ul>
+<li>行最简矩阵</li>
+</ul>
+<p>设<script type="math/tex">A</script>是m*n的矩阵，若满足<script type="math/tex">A</script>是行阶梯矩阵，且非零行的主元都是1，且主元所在列其他元素都是0，则<script type="math/tex">A</script>是行最简矩阵。</p>
+<p>行最简矩阵有什么用？先埋个伏笔。</p>
+<h3 id="2-6-用初等行变换求逆矩阵"><a href="#2-6-用初等行变换求逆矩阵" class="headerlink" title="2.6 用初等行变换求逆矩阵"></a>2.6 用初等行变换求逆矩阵</h3><ul>
+<li>可逆的充要条件（喜+1）</li>
+</ul>
+<p>A可逆等价于A可表示为若干初等矩阵的乘积。</p>
+<ul>
+<li>定义一个新矩阵</li>
+</ul>
+<script type="math/tex; mode=display">(A|E) = \left[ {\begin{matrix}
+A&E
+\end{matrix} } \right]</script><ul>
+<li>怎么求出逆？</li>
+</ul>
+<p>通过初等行变换，将A矩阵化为单位矩阵，则E矩阵部分就是A的逆了。</p>
+<p>注意：初等行变换是对整个矩阵做的。而结果是分开看的。</p>
+<ul>
+<li>原理？</li>
+</ul>
+<p>当A进行初等行变换→PA=E，则P=A的逆</p>
+<p>与此同时E进行相同的初等行变换→PE=P=A的逆</p>
+<h3 id="2-7-求解方程组"><a href="#2-7-求解方程组" class="headerlink" title="2.7 求解方程组"></a>2.7 求解方程组</h3><h4 id="2-7-1-直接法"><a href="#2-7-1-直接法" class="headerlink" title="2.7.1 直接法"></a>2.7.1 直接法</h4><p>有<script type="math/tex">AX=B</script>，若<script type="math/tex">A</script>可逆，则<script type="math/tex">X=A^{-1}B</script></p>
+<p>但还要进行矩阵乘法，计算量比较大，所以又引入初等行变换法。</p>
+<h4 id="2-7-2-初等行变换法"><a href="#2-7-2-初等行变换法" class="headerlink" title="2.7.2 初等行变换法"></a>2.7.2 初等行变换法</h4><p>有<script type="math/tex">AX=B</script>，若<script type="math/tex">A</script>可逆，则<script type="math/tex">X=A^{-1}B</script><br>由<script type="math/tex">PA=E,PB=A^{-1}B=X</script>，我们使用增广矩阵的形式表示它：</p>
+<script type="math/tex; mode=display">P(A,B)=(E,X)</script><p>我们看一道例题：<br><img src="/images/521c2b3cc646bc660d57e25cf020c991257410986b5f75b83be8973fae7e1ad8.png" width="50%" alt="例题"></p>
+<p>首先，依照结构构造<script type="math/tex">P(A,B)</script>，对整个矩阵初等行变换，将<script type="math/tex">A</script>变为单位矩阵，<script type="math/tex">B</script>部分就是方程的解了。</p>
+<h4 id="2-7-3-高斯消元解方程组"><a href="#2-7-3-高斯消元解方程组" class="headerlink" title="2.7.3 高斯消元解方程组"></a>2.7.3 高斯消元解方程组</h4><ul>
+<li>步骤</li>
+</ul>
+<p>1.从上往下正向消元，化为阶梯型矩阵。</p>
+<p>正向消元，就是使用<script type="math/tex">a_{11}</script>对<script type="math/tex">a_{21}</script>~<script type="math/tex">a_{n1}</script>进行消元，第二列使用<script type="math/tex">a_{22}</script>对<script type="math/tex">a_{32}</script>~<script type="math/tex">a_{n2}</script>进行消元，总结起来就是使用主对角线上的元素对它下面的元素进行消元，变成阶梯型矩阵。（期间可能会使用同解变形）</p>
+<p>2.从下往上反向求解，带回原式。</p>
+<p>变成阶梯型矩阵后，我们就可以进行反向求解了。</p>
+<p>3.例题</p>
+<p><img src="/images/微信截图_20210221103856.png" width="50%" alt="例题"></p>
+<p><img src="/images/微信截图_20210221103931.png" width="50%" alt="例题"></p>
+<ul>
+<li>自由变量</li>
+</ul>
+<p>方程组有无穷多解时，需要对自由变量进行赋值。自由变量使得这个方程组有确定的解。</p>
+<p>确定方法：把系数矩阵化成行阶梯型，非零行的首个非零元对应的列就是主元，其余的都是自由变量。</p>
+<p><strong>至此，我们已经可以解方程组了。但，我们对比克拉姆法则，其不仅可以解方程组，还可以判断解的个数，所以接下来的工作就是判断解的个数。</strong></p>
+<h2 id="3-矩阵的秩（敲坏黑板）"><a href="#3-矩阵的秩（敲坏黑板）" class="headerlink" title="3. 矩阵的秩（敲坏黑板）"></a>3. 矩阵的秩（敲坏黑板）</h2><h3 id="3-1-概念"><a href="#3-1-概念" class="headerlink" title="3.1 概念"></a>3.1 概念</h3><ul>
+<li>子式的概念</li>
+</ul>
+<p>在<script type="math/tex">m*n</script>的矩阵<script type="math/tex">A</script>中，任取k行与k列(<script type="math/tex">k \le m,k \le n</script>)，位于这些行与列的交叉点上的<script type="math/tex">k^2</script>个元素按其在原来矩阵<script type="math/tex">A</script>的次序可以构成一个<script type="math/tex">k</script>阶行列式，称其为矩阵<script type="math/tex">A</script>的一个<script type="math/tex">k</script>阶子式。</p>
+<p>其实就是抽<script type="math/tex">k</script>行抽<script type="math/tex">k</script>列，取交集，得到<script type="math/tex">k^2</script>个数，这些数按原来的次序组成行列式，就叫做<script type="math/tex">k</script>阶子式。</p>
+<p>例子：<br><img src="/images/84c4cc3c43643553a9f937fb0a2faa9a11509f15858142ad0627e92f91d265f8.png" width="50%" alt="例子"></p>
+<ul>
+<li>秩的概念</li>
+</ul>
+<p>若矩阵<script type="math/tex">A</script>中存在r阶子式不为0，<script type="math/tex">r+1</script>阶（如果存在）子式全为0，则称矩阵<script type="math/tex">A</script>的秩为<script type="math/tex">r</script>，记成<script type="math/tex">r(A)=r</script>。</p>
+<p>零矩阵的秩规定为0。</p>
+<p>使用自然语言描述：<br><img src="/images/8778e07d5d0075f78412da5e59f31be37f39f47a1d209ed69b4e6228e4d5ea01.png" width="50%" alt="例子"></p>
+<h3 id="3-2-公式"><a href="#3-2-公式" class="headerlink" title="3.2 公式"></a>3.2 公式</h3><ol>
+<li><script type="math/tex; mode=display">0 \le r({A_{m*n} }) \le \min (m,n)</script></li>
+<li><script type="math/tex; mode=display">r({A^T}) = r(A)</script></li>
+<li><script type="math/tex; mode=display">r(A + B) \le r(A) + r(B)</script></li>
+<li><script type="math/tex; mode=display">r(kA) = r(A)</script></li>
+<li><script type="math/tex; mode=display">r(AB) \le \min (r(A),r(B))</script></li>
+<li>若<script type="math/tex">P,Q</script>可逆，则<script type="math/tex">r(PAQ)=r(A)</script>,<script type="math/tex">r(PA)=r(A)</script>,<script type="math/tex">r(AQ)=r(A)</script></li>
+<li><script type="math/tex; mode=display">r\left[ {\begin{matrix}
+A&0\\
+0&B
+\end{matrix} } \right] = r(A) + r(B)</script></li>
+<li><script type="math/tex; mode=display">\max (r(A),r(B)) \le r(A|B) \le r(A) + r(B)</script></li>
+</ol>
+<h3 id="3-3-定理"><a href="#3-3-定理" class="headerlink" title="3.3 定理"></a>3.3 定理</h3><p>经过初等变换矩阵的秩不变。</p>
+<p>即3.2中的第6个公式。</p>
+<p><strong>同型矩阵秩相等则等价。</strong></p>
+<p><strong>有了秩这个工具，就可以打最后的boss了。</strong></p>
+<h2 id="4-线性方程组有解判定"><a href="#4-线性方程组有解判定" class="headerlink" title="4. 线性方程组有解判定"></a>4. 线性方程组有解判定</h2><h3 id="4-1-定理"><a href="#4-1-定理" class="headerlink" title="4.1 定理"></a>4.1 定理</h3><p>矩阵方程<script type="math/tex">AX=B</script>有解等价于<script type="math/tex">r(A)=r(A|B)</script>。</p>
+<h3 id="4-2-非齐次方程组"><a href="#4-2-非齐次方程组" class="headerlink" title="4.2 非齐次方程组"></a>4.2 非齐次方程组</h3><p>1.无解</p>
+<script type="math/tex; mode=display">r(A) + 1 = r(\overline A )</script><p>2.唯一解</p>
+<script type="math/tex; mode=display">r(A) = r(\overline A ) = n</script><blockquote>
+<p>-<script type="math/tex">n</script>是方程未知数的个数啦，也就是元数。</p>
+</blockquote>
+<p>3.无穷解</p>
+<script type="math/tex; mode=display">r(A) = r(\overline A ) < n</script><h3 id="4-3-齐次方程组"><a href="#4-3-齐次方程组" class="headerlink" title="4.3 齐次方程组"></a>4.3 齐次方程组</h3><p>1.零解</p>
+<p>齐次方程组一定有解。且不是零解就是无穷解。</p>
+<script type="math/tex; mode=display">r(A) = r(\overline A ) = n</script><p>2.无穷解</p>
+<script type="math/tex; mode=display">r(A) = r(\overline A ) < n</script><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>第二章与第三章其实都是在讲矩阵这个新算子，并且讲这个新算子应用到线性方程组的计算中。为了算子的计算封闭性等性质，提出了逆矩阵、转置矩阵等等，其目的都是为了使矩阵的运算是可以进行的。第三章将第二章所述的性质综合应用，并使用矩阵来解决线性方程组的解。</p>
+<p>第二章中，首先提出了矩阵的概念与矩阵的类型，既然有了算子，自然就要定义计算法则。接下来就是讲矩阵的运算法则，有矩阵加法、乘法（<strong>分为数乘与矩阵乘法</strong>）、转置。最后还有矩阵的逆，我们可以理解为实数域中的倒数。为了求逆，我们还提出了伴随矩阵。将运算法则阐述完后，我们将分治或是降维的思想应用到矩阵，提出了分块矩阵。</p>
+<p>第三章中，由高斯消元法引出初等变换，我们使用初等变换可以求出矩阵的逆，从而求出方程组的解。我们可以使用初等变换与增广矩阵的思想，直接求解出方程组的解。我们可以使用高斯消元法的基本思想，直接对矩阵进行初等变换，同样可以求解出方程的解。与克拉默法则一样，矩阵解法同样也能够判断解的个数，于是提出了秩的概念，通过秩，可以判断方程组是否有解，解的个数。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">SzUp</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://coding-pages-bucket-3524585-8350222-12967-499213-1304986771.cos-website.ap-hongkong.myqcloud.com/2021/02/21/0221-ju-zhen-yu-xian-xing-fang-cheng-zu/">https://coding-pages-bucket-3524585-8350222-12967-499213-1304986771.cos-website.ap-hongkong.myqcloud.com/2021/02/21/0221-ju-zhen-yu-xian-xing-fang-cheng-zu/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">SzUp</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E8%80%83%E7%A0%94/">
+                                    <span class="chip bg-color">考研</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                                    <span class="chip bg-color">线性代数</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'scPrA0Ss3ejyR6Dd4bHAeO80-gzGzoHsz',
+        appKey: 'n7dDIBt80Q2MhkM4HfGD9UBI',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/02/21/0221-hexo-yi-zhi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Hexo移植">
+                        
+                        <span class="card-title">Hexo移植</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-21
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%A7%BB%E6%A4%8D/">
+                        <span class="chip bg-color">移植</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/02/19/0219-ju-zhen/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="线性代数基础系列（2）——矩阵">
+                        
+                        <span class="card-title">线性代数基础系列（2）——矩阵</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" class="post-category">
+                                    线性代数
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%80%83%E7%A0%94/">
+                        <span class="chip bg-color">考研</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                        <span class="chip bg-color">线性代数</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: SzUp<br />'
+            + '文章作者: SzUp<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="kugou"
+                   type="playlist"
+                   id="3315295"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">SzUp</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">19.1k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/SzUp" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a class="tooltipped" target="_blank" data-tooltip="邮件联系我: 1134334709@qq.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1134334709" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1134334709" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+    <a class="tooltipped" target="_blank" data-tooltip="微信联系我: szp19991012" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
+    </a>
+
+
+
+    <a href="https://blog.csdn.net/weixin_43831008" class="tooltipped" target="_blank" data-tooltip="访问我的CSDN" data-position="top" data-delay="50">
+        <i class="fas fa-copyright"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+    
+    <script type="text/javascript">
+        var OriginTitile=document.title,st;
+        document.addEventListener("visibilitychange",function(){
+            document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+        })
+    </script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>

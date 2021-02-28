@@ -220,31 +220,6 @@
     
     
     <entry>
-      <title>Latex使用总结</title>
-      <link href="2021/02/17/0217-latex-shi-yong-zong-jie/"/>
-      <url>2021/02/17/0217-latex-shi-yong-zong-jie/</url>
-      
-        <content type="html"><![CDATA[<p>再开一坑~最近开始使用latex进行一些排版、公式编辑。整理成一篇博客，方便大家也方便自己。</p><h2 id="0-latex代码来源"><a href="#0-latex代码来源" class="headerlink" title="0. latex代码来源"></a>0. latex代码来源</h2><p>像我这么懒的人，latex代码自然不会自己写啦(doge)。</p><p><img src="/images/21021701.png" alt="Alt text"></p><h2 id="1-矩阵"><a href="#1-矩阵" class="headerlink" title="1. 矩阵"></a>1. 矩阵</h2><p>以3*3的矩阵为例：</p><script type="math/tex; mode=display">\begin{matrix}{a_{11} }&{a_{12} }&{a_{13} }\\{a_{21} }&{a_{22} }&{a_{23} }\\{a_{31} }&{a_{32} }&{a_{33} }\end{matrix}</script><blockquote><p>“ \begin{matrix}<br>{a<em>{11} }&amp;{a</em>{12} }&amp;{a<em>{13} }\<br>{a</em>{21} }&amp;{a<em>{22} }&amp;{a</em>{23} }\<br>{a<em>{31} }&amp;{a</em>{32} }&amp;{a_{33} }<br>\end{matrix} “</p></blockquote><p>首尾需要加入两个$。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 其他 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Latex </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>线性代数基础系列（0）——intro</title>
       <link href="2021/02/17/0217-xian-xing-dai-shu-da-gang/"/>
       <url>2021/02/17/0217-xian-xing-dai-shu-da-gang/</url>
@@ -264,6 +239,31 @@
             <tag> 考研 </tag>
             
             <tag> 线性代数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Latex使用总结</title>
+      <link href="2021/02/17/0217-latex-shi-yong-zong-jie/"/>
+      <url>2021/02/17/0217-latex-shi-yong-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<p>再开一坑~最近开始使用latex进行一些排版、公式编辑。整理成一篇博客，方便大家也方便自己。</p><h2 id="0-latex代码来源"><a href="#0-latex代码来源" class="headerlink" title="0. latex代码来源"></a>0. latex代码来源</h2><p>像我这么懒的人，latex代码自然不会自己写啦(doge)。</p><p><img src="/images/21021701.png" alt="Alt text"></p><h2 id="1-矩阵"><a href="#1-矩阵" class="headerlink" title="1. 矩阵"></a>1. 矩阵</h2><p>以3*3的矩阵为例：</p><script type="math/tex; mode=display">\begin{matrix}{a_{11} }&{a_{12} }&{a_{13} }\\{a_{21} }&{a_{22} }&{a_{23} }\\{a_{31} }&{a_{32} }&{a_{33} }\end{matrix}</script><blockquote><p>“ \begin{matrix}<br>{a<em>{11} }&amp;{a</em>{12} }&amp;{a<em>{13} }\<br>{a</em>{21} }&amp;{a<em>{22} }&amp;{a</em>{23} }\<br>{a<em>{31} }&amp;{a</em>{32} }&amp;{a_{33} }<br>\end{matrix} “</p></blockquote><p>首尾需要加入两个$。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 其他 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Latex </tag>
             
         </tags>
       
