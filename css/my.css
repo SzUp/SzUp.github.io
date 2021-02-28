@@ -1,0 +1,18 @@
+/* Here is your custom css styles. */
+
+@font-face{
+    font-family: 'STENCIL';
+    src: url('../fonts/STENCIL.ttf');
+   }
+   .diyFont{
+    font-family: 'STENCIL';
+   }
+
+@font-face{
+    font-family: 'STZHONGS';
+    src: url('../fonts/STZHONGS.ttf');
+}
+ 
+body{
+    font-family: 'STZHONGS';
+}
