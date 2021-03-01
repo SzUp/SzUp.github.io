@@ -5,50 +5,30 @@
     <url>/2021/03/01/0301-reading-skills/</url>
     <content><![CDATA[<p>最近看了唐迟老师的《阅读的逻辑》，现在写读后总结和大家分享一下。</p>
 <h2 id="PART1-金句"><a href="#PART1-金句" class="headerlink" title="PART1 金句"></a>PART1 金句</h2><p>首先，先列出一些书中我认为比较有用的金句。</p>
-<ol>
-<li>在英语考试的阅读题型中，一旦“总结”就会偏于主观，就犯了考试的大忌——“一百个人心中有一百个哈姆雷特”，觉得每个选项都有道理，以至于难以找到正确答案。</li>
-</ol>
+<p>1.在英语考试的阅读题型中，一旦“总结”就会偏于主观，就犯了考试的大忌——“一百个人心中有一百个哈姆雷特”，觉得每个选项都有道理，以至于难以找到正确答案。</p>
 <blockquote>
 <p>避免总结，提倡定位，依据原文找到答案。</p>
 </blockquote>
-<ol>
-<li>对于应试考试而言，摸清楚命题人觉得选谁才是更重要的。</li>
-</ol>
+<p>2.对于应试考试而言，摸清楚命题人觉得选谁才是更重要的。</p>
 <blockquote>
 <p>不要你觉得，而是要命题人觉得。</p>
 </blockquote>
-<ol>
-<li><p>互为相反选项中往往会有一个正确答案。互为相似选项可能可以直接排除。</p>
-</li>
-<li><p>对代词敏感，有助于解答新题型。</p>
-</li>
-</ol>
+<p>3.互为相反选项中往往会有一个正确答案。互为相似选项可能可以直接排除。</p>
+<p>4.对代词敏感，有助于解答新题型。</p>
 <blockquote>
 <p>通常 the,this,these,those,such + 名词 出现，意味着该处指代前文曾出现过的名词。</p>
 </blockquote>
-<ol>
-<li><p><strong>细节服从主旨。</strong></p>
-</li>
-<li><p>动词词组的核心在介词。</p>
-</li>
-</ol>
+<p>5.<strong>细节服从主旨。</strong></p>
+<p>6.动词词组的核心在介词。</p>
 <blockquote>
 <p>如果在阅读中遇到不熟悉的词组，可以通过一个介词相同的词组来推测，通常意思上相近，至少逻辑上保持一致。</p>
 </blockquote>
-<ol>
-<li><p>实验过程往往并非重点，真正需要重点关注的是该实验要证明的观点或得出的结论。</p>
-</li>
-<li><p>正确选项拒绝推理，要有一说一。考官命题喜欢设置偷换概念的强干扰项，变为有一说二。对每个选项的表达，要在原文看是否能找到原词重现或是同义替换。正确答案一定是在原文中能找到依据的。</p>
-</li>
-<li><p>干扰选项的典型特征是信息的拼凑，为了迷惑考生。</p>
-</li>
-<li><p>考研阅读的答案不是选出来的，而是比较出来的。</p>
-</li>
-<li><p>反复强调的是重点，重点是考点。</p>
-</li>
-<li><p>选择最佳答案而非正确答案。</p>
-</li>
-</ol>
+<p>7.实验过程往往并非重点，真正需要重点关注的是该实验要证明的观点或得出的结论。</p>
+<p>8.正确选项拒绝推理，要有一说一。考官命题喜欢设置偷换概念的强干扰项，变为有一说二。对每个选项的表达，要在原文看是否能找到原词重现或是同义替换。正确答案一定是在原文中能找到依据的。</p>
+<p>9.干扰选项的典型特征是信息的拼凑，为了迷惑考生。</p>
+<p>10.考研阅读的答案不是选出来的，而是比较出来的。</p>
+<p>11.反复强调的是重点，重点是考点。</p>
+<p>12.选择最佳答案而非正确答案。</p>
 <h2 id="PART2-阅读的本质——逻辑关系"><a href="#PART2-阅读的本质——逻辑关系" class="headerlink" title="PART2 阅读的本质——逻辑关系"></a>PART2 阅读的本质——逻辑关系</h2><p>逻辑关系分为三种，句间逻辑、段间逻辑、题干逻辑。</p>
 <h3 id="1-句间逻辑"><a href="#1-句间逻辑" class="headerlink" title="1. 句间逻辑"></a>1. 句间逻辑</h3><p>为简化，将逻辑分为正逻辑（positive）与负逻辑（negative）。</p>
 <p>把因果、递进关系归为正逻辑；将让步、转折关系归为负逻辑。</p>
@@ -1924,21 +1904,6 @@ D = \left| {\begin{matrix}
       </tags>
   </entry>
   <entry>
-    <title>线性代数基础系列（0）——intro</title>
-    <url>/2021/02/17/0217-xian-xing-dai-shu-da-gang/</url>
-    <content><![CDATA[<h1 id="线性代数大纲"><a href="#线性代数大纲" class="headerlink" title="线性代数大纲"></a>线性代数大纲</h1><p>新开一坑，记录考研复习第一轮中的线性代数部分。这篇博客只会给出思维导图式的框架，不会给出具体内容。<br>另外，Xmind可以支持转markdown，简直是不要太方便。Xmind打钱(doge)。</p>
-<h2 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h2><h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><h2 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h2><h2 id="方程组"><a href="#方程组" class="headerlink" title="*方程组"></a>*方程组</h2><p>重要考点。</p>
-<h2 id="特征值"><a href="#特征值" class="headerlink" title="*特征值"></a>*特征值</h2><p>重要考点。</p>
-<h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2>]]></content>
-      <categories>
-        <category>线性代数</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-        <tag>线性代数</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Latex使用总结</title>
     <url>/2021/02/17/0217-latex-shi-yong-zong-jie/</url>
     <content><![CDATA[<p>再开一坑~最近开始使用latex进行一些排版、公式编辑。整理成一篇博客，方便大家也方便自己。</p>
@@ -1960,6 +1925,21 @@ D = \left| {\begin{matrix}
       </categories>
       <tags>
         <tag>Latex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>线性代数基础系列（0）——intro</title>
+    <url>/2021/02/17/0217-xian-xing-dai-shu-da-gang/</url>
+    <content><![CDATA[<h1 id="线性代数大纲"><a href="#线性代数大纲" class="headerlink" title="线性代数大纲"></a>线性代数大纲</h1><p>新开一坑，记录考研复习第一轮中的线性代数部分。这篇博客只会给出思维导图式的框架，不会给出具体内容。<br>另外，Xmind可以支持转markdown，简直是不要太方便。Xmind打钱(doge)。</p>
+<h2 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h2><h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><h2 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h2><h2 id="方程组"><a href="#方程组" class="headerlink" title="*方程组"></a>*方程组</h2><p>重要考点。</p>
+<h2 id="特征值"><a href="#特征值" class="headerlink" title="*特征值"></a>*特征值</h2><p>重要考点。</p>
+<h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2>]]></content>
+      <categories>
+        <category>线性代数</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+        <tag>线性代数</tag>
       </tags>
   </entry>
   <entry>
