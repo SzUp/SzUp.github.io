@@ -1,42 +1,316 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>线性代数基础系列（0）——intro</title>
-    <url>/2021/02/17/0217-xian-xing-dai-shu-da-gang/</url>
-    <content><![CDATA[<h1 id="线性代数大纲"><a href="#线性代数大纲" class="headerlink" title="线性代数大纲"></a>线性代数大纲</h1><p>新开一坑，记录考研复习第一轮中的线性代数部分。这篇博客只会给出思维导图式的框架，不会给出具体内容。<br>另外，Xmind可以支持转markdown，简直是不要太方便。Xmind打钱(doge)。</p>
-<h2 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h2><h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><h2 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h2><h2 id="方程组"><a href="#方程组" class="headerlink" title="*方程组"></a>*方程组</h2><p>重要考点。</p>
-<h2 id="特征值"><a href="#特征值" class="headerlink" title="*特征值"></a>*特征值</h2><p>重要考点。</p>
-<h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2>]]></content>
-      <categories>
-        <category>线性代数</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-        <tag>线性代数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Latex使用总结</title>
-    <url>/2021/02/17/0217-latex-shi-yong-zong-jie/</url>
-    <content><![CDATA[<p>再开一坑~最近开始使用latex进行一些排版、公式编辑。整理成一篇博客，方便大家也方便自己。</p>
-<h2 id="0-latex代码来源"><a href="#0-latex代码来源" class="headerlink" title="0. latex代码来源"></a>0. latex代码来源</h2><p>像我这么懒的人，latex代码自然不会自己写啦(doge)。</p>
-<p><img src="/images/21021701.png" alt="Alt text"></p>
-<h2 id="1-矩阵"><a href="#1-矩阵" class="headerlink" title="1. 矩阵"></a>1. 矩阵</h2><p>以3*3的矩阵为例：</p>
-<script type="math/tex; mode=display">
-\begin{matrix}
-{a_{11} }&{a_{12} }&{a_{13} }\\
-{a_{21} }&{a_{22} }&{a_{23} }\\
-{a_{31} }&{a_{32} }&{a_{33} }
-\end{matrix}</script><blockquote>
-<p>“ \begin{matrix}<br>{a<em>{11} }&amp;{a</em>{12} }&amp;{a<em>{13} }\<br>{a</em>{21} }&amp;{a<em>{22} }&amp;{a</em>{23} }\<br>{a<em>{31} }&amp;{a</em>{32} }&amp;{a_{33} }<br>\end{matrix} “</p>
+    <title>单词系列（2）——后缀基操篇</title>
+    <url>/2021/02/16/0216-hou-zhui/</url>
+    <content><![CDATA[<p>hello，今天继续更新第二篇博客。前一篇博客说的是前缀部分。前缀更多决定单词的部分含义，而后缀更多决定单词的词性。</p>
+<h2 id="基操篇"><a href="#基操篇" class="headerlink" title="基操篇"></a>基操篇</h2><h3 id="1-e"><a href="#1-e" class="headerlink" title="1. e"></a>1. e</h3><p>名词<strong>或</strong>动词后缀。</p>
+<p><strong>注：该篇博客中的或，是高中数学中的命题或，不是互斥或。即e表示的词性可以是名词，也可以是动词，也可以即是动词又是名词。</strong></p>
+<h4 id="例词："><a href="#例词：" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>divide = divid + e </p>
+<p>v. （使）分开，分成；分配，分担；分隔；（道路）分叉；使产生分歧；（数）除，除以<br>n. 分歧，差异；分水岭；界限</p>
 </blockquote>
-<p>首尾需要加入两个$。</p>
+<h3 id="2-ed"><a href="#2-ed" class="headerlink" title="2. ed"></a>2. ed</h3><p>形容词后缀。表示……的，可能带有被动含义。也可能是动词后缀，表示某动词的过去式、过去分词形式。</p>
+<p><strong>注：该篇博客中的或，是高中数学中的命题或，不是互斥或。即e表示的词性可以是名词，也可以是动词，也可以即是动词又是名词。</strong></p>
+<h4 id="例词：-1"><a href="#例词：-1" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>divide = divide + ed </p>
+<p>adj. 分裂的；分开的；有分歧的<br>v. 分开（divide的过去分词）；分离</p>
+</blockquote>
+<h3 id="3-ry族"><a href="#3-ry族" class="headerlink" title="3. (@)ry族"></a>3. (@)ry族</h3><p>(@)ry族的@共包含4个元音字母a、o、u、e，组合起来就是ary、ory、ury、ery。它们是形容词或<strong>名词</strong>（比较常见）后缀。</p>
+<h4 id="例词：-2"><a href="#例词：-2" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>factory = fact + ory</p>
+<p>n. 工厂；制造厂；代理店</p>
+<p>diary = di + ary</p>
+<p>n. 日志，日记；日记簿</p>
+<p>century = cent + ury</p>
+<p>n. 世纪，百年；（板球）一百分</p>
+<p>mystery = myst + ery</p>
+<p>n. 秘密，谜；神秘，神秘的事物；推理小说，推理剧；</p>
+</blockquote>
+<h3 id="4-m族、-n族"><a href="#4-m族、-n族" class="headerlink" title="4. (@)m族、(@)n族"></a>4. (@)m族、(@)n族</h3><p>(@)m族共包含im、um、em；(@)n族共包含an、on。是名词后缀。</p>
+<h4 id="例词：-3"><a href="#例词：-3" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>minim = min + im</p>
+<p>n. 量滴（液量最小单位）；极小的东西；二分音符<br>adj. 最小的；微小的<br><strong>(注：可能会有少量词有延伸的词性，需要单独注意)</strong></p>
+<p>calcium = calc + i + um</p>
+<p>n. [化学] 钙</p>
+<p><a href="https://imgchr.com/i/ycsA2V"><img src="https://s3.ax1x.com/2021/02/16/ycsA2V.png" alt="ycsA2V.png"></a></p>
+<p><strong>可以看到，碱金属、碱土金属等金属的后缀都是um，说明这个后缀用于表示金属元素。</strong></p>
+<p>pedestrian = ped + estr + i + an</p>
+<p>adj. 徒步的；缺乏想像力的<br>n. 行人；步行者</p>
+<p><strong>an有人的意思。例如christian，european等等。</strong></p>
+<p>electron = electr + on</p>
+<p>n. 电子</p>
+<p><strong>on有小的意思。电子是微粒，所以用了on这个后缀。例如plankton，表示浮游生物。</strong></p>
+</blockquote>
+<h3 id="5-l族"><a href="#5-l族" class="headerlink" title="5. (@)l族"></a>5. (@)l族</h3><p>(@)l族共包含al、el、il、ul。是名词或形容词后缀。</p>
+<h4 id="例词：-4"><a href="#例词：-4" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>survival = sur + viv + al</p>
+<p>n. 幸存，残存；幸存者，残存物</p>
+<p>novel = nov + el  </p>
+<p>adj. 新奇的；异常的<br>n. 小说</p>
+<p>tendril = tendr + il</p>
+<p>n. 卷须；蔓；卷须状物</p>
+<p>vocabulary = vocab + <strong>ul</strong> + ary</p>
+<p>particular = part + ic + <strong>ul</strong> + ary</p>
+<p>spectular = spect + <strong>ul</strong> + ar</p>
+<p><strong>ul一般不做后缀，而是充当连接成分，连接前一词根和后一词根。</strong></p>
+</blockquote>
+<h3 id="6-ble族、-bility族"><a href="#6-ble族、-bility族" class="headerlink" title="6. (@)ble族、(@)bility族"></a>6. (@)ble族、(@)bility族</h3><p>(@)ble族共包含ible、able、ile。表示能……的，可……的。</p>
+<p>(@)bility族共包含ibility、ability、ility。表示能力。</p>
+<p>这两个族之间是存在对应关系的。现在拿ible举例子。</p>
+<p>ible + ity = i<em>bl</em>ity， 为了方便拼读，在bl中间增加i，就变成了ibility。</p>
+<p>able + ity = a<em>bl</em>ity， 为了方便拼读，在bl中间增加i，就变成了ability。</p>
+<p>ile + ity = ility。</p>
+<h4 id="例词：-5"><a href="#例词：-5" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>visible = vis + ible</p>
+<p>visibility = vis + ibility</p>
+<p>liable = ly + able </p>
+<p>liability = ly + ability</p>
+<p>mobile = mob + ile</p>
+<p>mobility = mob + ility</p>
+</blockquote>
+<h3 id="7-ing"><a href="#7-ing" class="headerlink" title="7. ing"></a>7. ing</h3><p>形容词后缀。或是名词后缀，表示动名词。或是动词，表示现在分词。</p>
+<h4 id="例词：-6"><a href="#例词：-6" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>amazing = amaze + ing</p>
+<p>adj. 令人惊异的<br>v. 使吃惊（amaze的ing形式）</p>
+</blockquote>
+<h3 id="8-ly"><a href="#8-ly" class="headerlink" title="8. ly"></a>8. ly</h3><p>形容词或副词后缀。</p>
+<h4 id="例词：-7"><a href="#例词：-7" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>happily = happy + ly</p>
+<p>adv. 快乐地；幸福地；幸运地；恰当地</p>
+<p>friendly = friend + ly</p>
+<p>adj. 友好的；亲切的；支持的；融洽的，和睦的</p>
+</blockquote>
+<h3 id="9-r族"><a href="#9-r族" class="headerlink" title="9. (@)r族"></a>9. (@)r族</h3><p>(@)r族共包含er、or、ar、our、ee、ess、ress七个成员。其中，最常见的er表示人或物，or也是表示人或物。ee也是表示人或物，但是有被动含义。ar、our就没有太固定的意思，大致表示名词后缀。ess、ress表示雌性的人或动物。</p>
+<h4 id="例词：-8"><a href="#例词：-8" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>employer = em + ploy + er</p>
+<p>n. 雇主，老板</p>
+<p>employee = em + ploy + ee</p>
+<p>n. 雇员；从业员工</p>
+<p>professor = pro + fess + or</p>
+<p>n. 教授；教师；公开表示信仰的人</p>
+<p>professor = pro + fess + or</p>
+<p>n. 教授；教师；公开表示信仰的人</p>
+<p>amour = am + our</p>
+<p>n. 恋情；偷情，奸情</p>
+<p>particular = part + ic + ul + ar</p>
+<p>adj. 特别的；详细的；独有的；挑剔的<br>n. 详细说明；个别项目</p>
+<p>actress = act + ress<br>比较一下 actor = act + or</p>
+<p>lioness = lion + ess  </p>
+</blockquote>
+<h3 id="10-ous"><a href="#10-ous" class="headerlink" title="10. ous"></a>10. ous</h3><p>形容词后缀。</p>
+<h4 id="例词：-9"><a href="#例词：-9" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>delicous = delic + ous</p>
+<p>adj. 美味的；可口的</p>
+</blockquote>
+<h3 id="11-ize-ise"><a href="#11-ize-ise" class="headerlink" title="11. ize/ise"></a>11. ize/ise</h3><p>动词后缀，有表示使动的含义。</p>
+<h4 id="例词：-10"><a href="#例词：-10" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>realize = real + ize</p>
+<p>vt. 实现；认识到；了解；将某物卖得，把(证券等)变成现钱；变卖</p>
+</blockquote>
+<h3 id="12-te族"><a href="#12-te族" class="headerlink" title="12. (@)te族"></a>12. (@)te族</h3><p>(@)te族共包含ate、ute、ite三个成员。常用表示动词，也表示形容词。</p>
+<h4 id="例词：-11"><a href="#例词：-11" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>create = cre + ate</p>
+<p>vt. 创造，创作；造成</p>
+<p>dynamite = dynam + ite</p>
+<p>n. 炸药；具有潜在危险的人（或物）<br>vt. 炸毁<br>adj. 极好的</p>
+<p>execute = ex + (s)ec + ute</p>
+<p>vt. 实行；执行；处死</p>
+</blockquote>
+<h3 id="13-ion"><a href="#13-ion" class="headerlink" title="13. ion"></a>13. ion</h3><p>名词后缀。</p>
+<h4 id="例词：-12"><a href="#例词：-12" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>creation = cre + ate + ion</p>
+<p>n. 创造，创作；创作物，产物</p>
+</blockquote>
+<h3 id="14-nt族、-nc-族"><a href="#14-nt族、-nc-族" class="headerlink" title="14. (@)nt族、(@)nc(@)族"></a>14. (@)nt族、(@)nc(@)族</h3><p>(@)nt族共包含ant、ent。形容词后缀或名词后缀。如果是名词后缀，可能表示人或物，类似于er。</p>
+<p>(@)nc(@)族共包含ance、ence、ancy、ency。名词后缀。</p>
+<p>它们之间存在对应关系。</p>
+<p>ant → ance/ancy</p>
+<p>ent → ence/ency</p>
+<h4 id="例词：-13"><a href="#例词：-13" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>attendant = attend + ant</p>
+<p>attendance = attend + ance</p>
+<p>different = diff + er + ent</p>
+<p>difference = diff + er + ence</p>
+<p>hesitant = hesit + ant</p>
+<p>hesitancy = hesit + ancy</p>
+<p>hesitance = hesit + ance</p>
+<p>permanent = per + man + ent</p>
+<p>permanence = per + man + ence</p>
+</blockquote>
+<h3 id="15-a"><a href="#15-a" class="headerlink" title="15. a"></a>15. a</h3><p>名词后缀，可能表示一类物品（集合）。</p>
+<h4 id="例词：-14"><a href="#例词：-14" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>formula = form + ul + a</p>
+<p>n. [数] 公式，准则；配方；婴儿食品</p>
+</blockquote>
+<h3 id="16-s"><a href="#16-s" class="headerlink" title="16. s"></a>16. s</h3><p>名词后缀，表示复数。</p>
+<h4 id="例词：-15"><a href="#例词：-15" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>books = book + s</p>
+</blockquote>
+<h3 id="17-ia"><a href="#17-ia" class="headerlink" title="17. ia"></a>17. ia</h3><p>名词后缀，表示疾病。</p>
+<h4 id="例词：-16"><a href="#例词：-16" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>nostalgia = nost(<strong><em>=nest</em></strong>) + alg + <strong><em>ia</em></strong></p>
+<p>n. <strong><em>乡愁</em></strong>；怀旧之情；怀乡病<br><del>这个解释真的很贴切了(doge)</del></p>
+</blockquote>
+<h3 id="18-it、id"><a href="#18-it、id" class="headerlink" title="18. it、id"></a>18. it、id</h3><p>形容词后缀。</p>
+<h4 id="例词：-17"><a href="#例词：-17" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>explicit = ex + plic + it</p>
+<p>valid = val + id </p>
+</blockquote>
+<h3 id="19-ty族"><a href="#19-ty族" class="headerlink" title="19. (@)ty族"></a>19. (@)ty族</h3><p>(@)ty族共包含ity、ety、ty三个成员。名词后缀。</p>
+<h4 id="例词：-18"><a href="#例词：-18" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>activity = act + ive + ity</p>
+<p>n. 活动；行动；活跃</p>
+<p>variety = var + i + ety</p>
+<p>n. 多样；种类；杂耍；变化，多样化</p>
+<p>certainty = certain + ty</p>
+<p>n. 必然；确实；确实的事情</p>
+</blockquote>
+<h3 id="20-ist"><a href="#20-ist" class="headerlink" title="20. ist"></a>20. ist</h3><p>名词后缀，表示学者。</p>
+<h4 id="例词：-19"><a href="#例词：-19" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>biologist = bi + o + log + ist</p>
+<p>n. 生物学家 </p>
+</blockquote>
+<h3 id="21-ic、ique"><a href="#21-ic、ique" class="headerlink" title="21. ic、ique"></a>21. ic、ique</h3><p>形容词后缀。</p>
+<h4 id="例词：-20"><a href="#例词：-20" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>biologic = bi + o + log + ic</p>
+<p>adj. 生物的；生物学的</p>
+</blockquote>
+<p>有一个与它读音相近的后缀ique，它是名词后缀。</p>
+<h4 id="例词：-21"><a href="#例词：-21" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>technique = techn + ique</p>
+<p>n. 技巧，技术；手法</p>
+</blockquote>
+<h3 id="22-logy"><a href="#22-logy" class="headerlink" title="22. logy"></a>22. logy</h3><p>名词后缀，表示学说，由log + y组合而成。</p>
+<h4 id="例词：-22"><a href="#例词：-22" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>biology = bi + o + logy</p>
+<p>n. （一个地区全部的）生物；生物学</p>
+</blockquote>
+<h3 id="23-ism"><a href="#23-ism" class="headerlink" title="23. ism"></a>23. ism</h3><p>名词后缀，表示……主义。</p>
+<h4 id="例词：-23"><a href="#例词：-23" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>biologism = bi + o + log + ism</p>
+<p>n. 生物主义</p>
+</blockquote>
+<p>也有asm这个后缀，用于表示一些抽象的概念。</p>
+<blockquote>
+<p>orgasm = org + asm</p>
+<p>n. 极度兴奋 <del>（还有别的意思，这里删减了）</del></p>
+</blockquote>
+<h3 id="24-ics"><a href="#24-ics" class="headerlink" title="24. ics"></a>24. ics</h3><p>名词后缀，表示学说，与logy类似。</p>
+<h4 id="例词：-24"><a href="#例词：-24" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>statics = stat + ics</p>
+<p>n. [力] 静力学</p>
+</blockquote>
+<h3 id="25-ure"><a href="#25-ure" class="headerlink" title="25. ure"></a>25. ure</h3><p>名词后缀，偶尔表示动词。</p>
+<h4 id="例词：-25"><a href="#例词：-25" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>structure = struct + ure</p>
+<p>n. 结构；构造；建筑物<br>vt. 组织；构成；建造</p>
+</blockquote>
+<h3 id="26-ment"><a href="#26-ment" class="headerlink" title="26. ment"></a>26. ment</h3><p>名词后缀。</p>
+<h4 id="例词：-26"><a href="#例词：-26" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>apartment = a + part + ment</p>
+<p>n. 公寓；房间</p>
+</blockquote>
+<h3 id="27-de族"><a href="#27-de族" class="headerlink" title="27. (@)de族"></a>27. (@)de族</h3><p>(@)de族共包含ade、ude。名词后缀。</p>
+<h4 id="例词：-27"><a href="#例词：-27" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>parade = par + ade</p>
+<p>n. 游行；阅兵；炫耀；行进；阅兵场<br>vt. 游行；炫耀；列队行进<br>vi. 游行；炫耀；列队行进</p>
+<p>altitude = alt + it + ude</p>
+<p>n. 高地；高度；[数] 顶垂线；（等级和地位等的）高级；海拔</p>
+</blockquote>
+<h3 id="28-fy"><a href="#28-fy" class="headerlink" title="28. fy"></a>28. fy</h3><p>动词后缀。</p>
+<h4 id="例词：-28"><a href="#例词：-28" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>purify = pur + i + fy</p>
+<p>vt. 净化；使纯净<br>vi. 净化；变纯净</p>
+</blockquote>
+<h3 id="29-age"><a href="#29-age" class="headerlink" title="29. age"></a>29. age</h3><p>名词后缀。</p>
+<h4 id="例词：-29"><a href="#例词：-29" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>passage = pass + age</p>
+<p>n. 一段（文章）；走廊；通路；通过；旅程，行程；船费</p>
+</blockquote>
+<h3 id="30-cle族"><a href="#30-cle族" class="headerlink" title="30. (@)cle族"></a>30. (@)cle族</h3><p>(@)cle族共包含icle、acle。名词后缀。</p>
+<h4 id="例词：-30"><a href="#例词：-30" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>obstacle = ob + st + acle</p>
+<p>n. 障碍，干扰，妨碍；障碍物</p>
+<p>article = art + icle</p>
+<p>n. 文章；物品；条款；[语] 冠词<br>vt. 订约将…收为学徒或见习生；使…受协议条款的约束<br>vi. 签订协议；进行控告</p>
+</blockquote>
+<h3 id="31-ice"><a href="#31-ice" class="headerlink" title="31. ice"></a>31. ice</h3><p>名词后缀。</p>
+<h4 id="例词：-31"><a href="#例词：-31" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>novice = nov + ice</p>
+<p>n. 初学者，新手</p>
+</blockquote>
+<h3 id="32-acy"><a href="#32-acy" class="headerlink" title="32. acy"></a>32. acy</h3><p>名词后缀。</p>
+<h4 id="例词：-32"><a href="#例词：-32" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>diplomacy = di + plom + acy</p>
+<p>n. 外交；外交手腕；交际手段</p>
+</blockquote>
+<h3 id="33-ish"><a href="#33-ish" class="headerlink" title="33. ish"></a>33. ish</h3><p>动词或形容词后缀。</p>
+<h4 id="例词：-33"><a href="#例词：-33" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>publish = publ + ish</p>
+<p>vt. 出版；发表；公布<br>vi. 出版；发行；刊印</p>
+<p>selfish = self + ish</p>
+<p>adj. 自私的；利己主义的</p>
+</blockquote>
+<h3 id="34-sis族"><a href="#34-sis族" class="headerlink" title="34. (@)sis族"></a>34. (@)sis族</h3><p>(@)sis族共包含asis、osis。名词后缀，与疾病相关。</p>
+<h4 id="例词：-34"><a href="#例词：-34" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>hemostasis = hemo(血) + st(站，停止) + asis</p>
+<p>n. [医] 止血；止血法</p>
+<p>neurosis = neur + osis</p>
+<p>n. [心理] 神经症；神经衰弱症</p>
+</blockquote>
+<h3 id="35-et族"><a href="#35-et族" class="headerlink" title="35. (@)et族"></a>35. (@)et族</h3><p>(@)et族共包含et、let、ette。名词后缀，用来表示较小的物品。与on不同的是，on一般表示的是微观的粒子或者是生物，et更多表示生活中的物品。</p>
+<h4 id="例词：-35"><a href="#例词：-35" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>cigarette = cigar(雪茄) + ette</p>
+<p>n. 香烟；纸烟</p>
+<p>coverlet = cover + let</p>
+<p>n. 被单；床罩</p>
+<p>circlet = circl + et</p>
+<p>n. 小圈；戒指，饰环</p>
+</blockquote>
+<h3 id="36-y"><a href="#36-y" class="headerlink" title="36. y"></a>36. y</h3><p>名词后缀。</p>
+<h4 id="例词：-36"><a href="#例词：-36" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>beauty = beaut + y</p>
+<p>n. 美；美丽；美人；美好的东西</p>
+</blockquote>
+<h3 id="37-ine"><a href="#37-ine" class="headerlink" title="37. ine"></a>37. ine</h3><p>名词或形容词后缀。</p>
+<h4 id="例词：-37"><a href="#例词：-37" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>marine = mar + ine</p>
+<p>adj. 船舶的；海生的；海产的；航海的，海运的<br>n. 海运业；舰队；水兵；（海军）士兵或军官</p>
+</blockquote>
+<h3 id="38-less"><a href="#38-less" class="headerlink" title="38. less"></a>38. less</h3><p>形容词后缀，表示没有。</p>
+<h4 id="例词：-38"><a href="#例词：-38" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>homeless = home + less</p>
+<p>adj. 无家可归的</p>
+</blockquote>
+<h3 id="39-ness"><a href="#39-ness" class="headerlink" title="39. ness"></a>39. ness</h3><p>名词后缀。</p>
+<h4 id="例词：-39"><a href="#例词：-39" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>necessariness = ne + cess + ary + ness</p>
+<p>n. 必要性</p>
+</blockquote>
+<h3 id="40-ful"><a href="#40-ful" class="headerlink" title="40. ful"></a>40. ful</h3><p>形容词后缀，表示多(full)。</p>
+<h4 id="例词：-40"><a href="#例词：-40" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>beautiful = beaut + i + ful</p>
+<p>adj. 美丽的；出色的；迷人的</p>
+</blockquote>
+<h3 id="41-ship"><a href="#41-ship" class="headerlink" title="41. ship"></a>41. ship</h3><p>名词后缀，表示抽象含义。</p>
+<h4 id="例词：-41"><a href="#例词：-41" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>relationship = re + lat + ion + ship</p>
+<p>n. 关系；关联</p>
+</blockquote>
+<h3 id="42-ese"><a href="#42-ese" class="headerlink" title="42. ese"></a>42. ese</h3><p>名词后缀，表示某国家的人或语言。</p>
+<h3 id="43-hood"><a href="#43-hood" class="headerlink" title="43. hood"></a>43. hood</h3><p>名词后缀，表示抽象含义，地点或一段时间等等。</p>
+<h4 id="例词：-42"><a href="#例词：-42" class="headerlink" title="例词："></a>例词：</h4><blockquote>
+<p>childhood = child + hood</p>
+<p>n. 童年时期；幼年时代</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>其他</category>
+        <category>英语</category>
       </categories>
       <tags>
-        <tag>Latex</tag>
+        <tag>单词</tag>
+        <tag>词缀</tag>
       </tags>
   </entry>
   <entry>
@@ -415,342 +689,6 @@
       <tags>
         <tag>单词</tag>
         <tag>词缀</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>单词系列（2）——后缀基操篇</title>
-    <url>/2021/02/16/0216-hou-zhui/</url>
-    <content><![CDATA[<p>hello，今天继续更新第二篇博客。前一篇博客说的是前缀部分。前缀更多决定单词的部分含义，而后缀更多决定单词的词性。</p>
-<h2 id="基操篇"><a href="#基操篇" class="headerlink" title="基操篇"></a>基操篇</h2><h3 id="1-e"><a href="#1-e" class="headerlink" title="1. e"></a>1. e</h3><p>名词<strong>或</strong>动词后缀。</p>
-<p><strong>注：该篇博客中的或，是高中数学中的命题或，不是互斥或。即e表示的词性可以是名词，也可以是动词，也可以即是动词又是名词。</strong></p>
-<h4 id="例词："><a href="#例词：" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>divide = divid + e </p>
-<p>v. （使）分开，分成；分配，分担；分隔；（道路）分叉；使产生分歧；（数）除，除以<br>n. 分歧，差异；分水岭；界限</p>
-</blockquote>
-<h3 id="2-ed"><a href="#2-ed" class="headerlink" title="2. ed"></a>2. ed</h3><p>形容词后缀。表示……的，可能带有被动含义。也可能是动词后缀，表示某动词的过去式、过去分词形式。</p>
-<p><strong>注：该篇博客中的或，是高中数学中的命题或，不是互斥或。即e表示的词性可以是名词，也可以是动词，也可以即是动词又是名词。</strong></p>
-<h4 id="例词：-1"><a href="#例词：-1" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>divide = divide + ed </p>
-<p>adj. 分裂的；分开的；有分歧的<br>v. 分开（divide的过去分词）；分离</p>
-</blockquote>
-<h3 id="3-ry族"><a href="#3-ry族" class="headerlink" title="3. (@)ry族"></a>3. (@)ry族</h3><p>(@)ry族的@共包含4个元音字母a、o、u、e，组合起来就是ary、ory、ury、ery。它们是形容词或<strong>名词</strong>（比较常见）后缀。</p>
-<h4 id="例词：-2"><a href="#例词：-2" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>factory = fact + ory</p>
-<p>n. 工厂；制造厂；代理店</p>
-<p>diary = di + ary</p>
-<p>n. 日志，日记；日记簿</p>
-<p>century = cent + ury</p>
-<p>n. 世纪，百年；（板球）一百分</p>
-<p>mystery = myst + ery</p>
-<p>n. 秘密，谜；神秘，神秘的事物；推理小说，推理剧；</p>
-</blockquote>
-<h3 id="4-m族、-n族"><a href="#4-m族、-n族" class="headerlink" title="4. (@)m族、(@)n族"></a>4. (@)m族、(@)n族</h3><p>(@)m族共包含im、um、em；(@)n族共包含an、on。是名词后缀。</p>
-<h4 id="例词：-3"><a href="#例词：-3" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>minim = min + im</p>
-<p>n. 量滴（液量最小单位）；极小的东西；二分音符<br>adj. 最小的；微小的<br><strong>(注：可能会有少量词有延伸的词性，需要单独注意)</strong></p>
-<p>calcium = calc + i + um</p>
-<p>n. [化学] 钙</p>
-<p><a href="https://imgchr.com/i/ycsA2V"><img src="https://s3.ax1x.com/2021/02/16/ycsA2V.png" alt="ycsA2V.png"></a></p>
-<p><strong>可以看到，碱金属、碱土金属等金属的后缀都是um，说明这个后缀用于表示金属元素。</strong></p>
-<p>pedestrian = ped + estr + i + an</p>
-<p>adj. 徒步的；缺乏想像力的<br>n. 行人；步行者</p>
-<p><strong>an有人的意思。例如christian，european等等。</strong></p>
-<p>electron = electr + on</p>
-<p>n. 电子</p>
-<p><strong>on有小的意思。电子是微粒，所以用了on这个后缀。例如plankton，表示浮游生物。</strong></p>
-</blockquote>
-<h3 id="5-l族"><a href="#5-l族" class="headerlink" title="5. (@)l族"></a>5. (@)l族</h3><p>(@)l族共包含al、el、il、ul。是名词或形容词后缀。</p>
-<h4 id="例词：-4"><a href="#例词：-4" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>survival = sur + viv + al</p>
-<p>n. 幸存，残存；幸存者，残存物</p>
-<p>novel = nov + el  </p>
-<p>adj. 新奇的；异常的<br>n. 小说</p>
-<p>tendril = tendr + il</p>
-<p>n. 卷须；蔓；卷须状物</p>
-<p>vocabulary = vocab + <strong>ul</strong> + ary</p>
-<p>particular = part + ic + <strong>ul</strong> + ary</p>
-<p>spectular = spect + <strong>ul</strong> + ar</p>
-<p><strong>ul一般不做后缀，而是充当连接成分，连接前一词根和后一词根。</strong></p>
-</blockquote>
-<h3 id="6-ble族、-bility族"><a href="#6-ble族、-bility族" class="headerlink" title="6. (@)ble族、(@)bility族"></a>6. (@)ble族、(@)bility族</h3><p>(@)ble族共包含ible、able、ile。表示能……的，可……的。</p>
-<p>(@)bility族共包含ibility、ability、ility。表示能力。</p>
-<p>这两个族之间是存在对应关系的。现在拿ible举例子。</p>
-<p>ible + ity = i<em>bl</em>ity， 为了方便拼读，在bl中间增加i，就变成了ibility。</p>
-<p>able + ity = a<em>bl</em>ity， 为了方便拼读，在bl中间增加i，就变成了ability。</p>
-<p>ile + ity = ility。</p>
-<h4 id="例词：-5"><a href="#例词：-5" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>visible = vis + ible</p>
-<p>visibility = vis + ibility</p>
-<p>liable = ly + able </p>
-<p>liability = ly + ability</p>
-<p>mobile = mob + ile</p>
-<p>mobility = mob + ility</p>
-</blockquote>
-<h3 id="7-ing"><a href="#7-ing" class="headerlink" title="7. ing"></a>7. ing</h3><p>形容词后缀。或是名词后缀，表示动名词。或是动词，表示现在分词。</p>
-<h4 id="例词：-6"><a href="#例词：-6" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>amazing = amaze + ing</p>
-<p>adj. 令人惊异的<br>v. 使吃惊（amaze的ing形式）</p>
-</blockquote>
-<h3 id="8-ly"><a href="#8-ly" class="headerlink" title="8. ly"></a>8. ly</h3><p>形容词或副词后缀。</p>
-<h4 id="例词：-7"><a href="#例词：-7" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>happily = happy + ly</p>
-<p>adv. 快乐地；幸福地；幸运地；恰当地</p>
-<p>friendly = friend + ly</p>
-<p>adj. 友好的；亲切的；支持的；融洽的，和睦的</p>
-</blockquote>
-<h3 id="9-r族"><a href="#9-r族" class="headerlink" title="9. (@)r族"></a>9. (@)r族</h3><p>(@)r族共包含er、or、ar、our、ee、ess、ress七个成员。其中，最常见的er表示人或物，or也是表示人或物。ee也是表示人或物，但是有被动含义。ar、our就没有太固定的意思，大致表示名词后缀。ess、ress表示雌性的人或动物。</p>
-<h4 id="例词：-8"><a href="#例词：-8" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>employer = em + ploy + er</p>
-<p>n. 雇主，老板</p>
-<p>employee = em + ploy + ee</p>
-<p>n. 雇员；从业员工</p>
-<p>professor = pro + fess + or</p>
-<p>n. 教授；教师；公开表示信仰的人</p>
-<p>professor = pro + fess + or</p>
-<p>n. 教授；教师；公开表示信仰的人</p>
-<p>amour = am + our</p>
-<p>n. 恋情；偷情，奸情</p>
-<p>particular = part + ic + ul + ar</p>
-<p>adj. 特别的；详细的；独有的；挑剔的<br>n. 详细说明；个别项目</p>
-<p>actress = act + ress<br>比较一下 actor = act + or</p>
-<p>lioness = lion + ess  </p>
-</blockquote>
-<h3 id="10-ous"><a href="#10-ous" class="headerlink" title="10. ous"></a>10. ous</h3><p>形容词后缀。</p>
-<h4 id="例词：-9"><a href="#例词：-9" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>delicous = delic + ous</p>
-<p>adj. 美味的；可口的</p>
-</blockquote>
-<h3 id="11-ize-ise"><a href="#11-ize-ise" class="headerlink" title="11. ize/ise"></a>11. ize/ise</h3><p>动词后缀，有表示使动的含义。</p>
-<h4 id="例词：-10"><a href="#例词：-10" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>realize = real + ize</p>
-<p>vt. 实现；认识到；了解；将某物卖得，把(证券等)变成现钱；变卖</p>
-</blockquote>
-<h3 id="12-te族"><a href="#12-te族" class="headerlink" title="12. (@)te族"></a>12. (@)te族</h3><p>(@)te族共包含ate、ute、ite三个成员。常用表示动词，也表示形容词。</p>
-<h4 id="例词：-11"><a href="#例词：-11" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>create = cre + ate</p>
-<p>vt. 创造，创作；造成</p>
-<p>dynamite = dynam + ite</p>
-<p>n. 炸药；具有潜在危险的人（或物）<br>vt. 炸毁<br>adj. 极好的</p>
-<p>execute = ex + (s)ec + ute</p>
-<p>vt. 实行；执行；处死</p>
-</blockquote>
-<h3 id="13-ion"><a href="#13-ion" class="headerlink" title="13. ion"></a>13. ion</h3><p>名词后缀。</p>
-<h4 id="例词：-12"><a href="#例词：-12" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>creation = cre + ate + ion</p>
-<p>n. 创造，创作；创作物，产物</p>
-</blockquote>
-<h3 id="14-nt族、-nc-族"><a href="#14-nt族、-nc-族" class="headerlink" title="14. (@)nt族、(@)nc(@)族"></a>14. (@)nt族、(@)nc(@)族</h3><p>(@)nt族共包含ant、ent。形容词后缀或名词后缀。如果是名词后缀，可能表示人或物，类似于er。</p>
-<p>(@)nc(@)族共包含ance、ence、ancy、ency。名词后缀。</p>
-<p>它们之间存在对应关系。</p>
-<p>ant → ance/ancy</p>
-<p>ent → ence/ency</p>
-<h4 id="例词：-13"><a href="#例词：-13" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>attendant = attend + ant</p>
-<p>attendance = attend + ance</p>
-<p>different = diff + er + ent</p>
-<p>difference = diff + er + ence</p>
-<p>hesitant = hesit + ant</p>
-<p>hesitancy = hesit + ancy</p>
-<p>hesitance = hesit + ance</p>
-<p>permanent = per + man + ent</p>
-<p>permanence = per + man + ence</p>
-</blockquote>
-<h3 id="15-a"><a href="#15-a" class="headerlink" title="15. a"></a>15. a</h3><p>名词后缀，可能表示一类物品（集合）。</p>
-<h4 id="例词：-14"><a href="#例词：-14" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>formula = form + ul + a</p>
-<p>n. [数] 公式，准则；配方；婴儿食品</p>
-</blockquote>
-<h3 id="16-s"><a href="#16-s" class="headerlink" title="16. s"></a>16. s</h3><p>名词后缀，表示复数。</p>
-<h4 id="例词：-15"><a href="#例词：-15" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>books = book + s</p>
-</blockquote>
-<h3 id="17-ia"><a href="#17-ia" class="headerlink" title="17. ia"></a>17. ia</h3><p>名词后缀，表示疾病。</p>
-<h4 id="例词：-16"><a href="#例词：-16" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>nostalgia = nost(<strong><em>=nest</em></strong>) + alg + <strong><em>ia</em></strong></p>
-<p>n. <strong><em>乡愁</em></strong>；怀旧之情；怀乡病<br><del>这个解释真的很贴切了(doge)</del></p>
-</blockquote>
-<h3 id="18-it、id"><a href="#18-it、id" class="headerlink" title="18. it、id"></a>18. it、id</h3><p>形容词后缀。</p>
-<h4 id="例词：-17"><a href="#例词：-17" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>explicit = ex + plic + it</p>
-<p>valid = val + id </p>
-</blockquote>
-<h3 id="19-ty族"><a href="#19-ty族" class="headerlink" title="19. (@)ty族"></a>19. (@)ty族</h3><p>(@)ty族共包含ity、ety、ty三个成员。名词后缀。</p>
-<h4 id="例词：-18"><a href="#例词：-18" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>activity = act + ive + ity</p>
-<p>n. 活动；行动；活跃</p>
-<p>variety = var + i + ety</p>
-<p>n. 多样；种类；杂耍；变化，多样化</p>
-<p>certainty = certain + ty</p>
-<p>n. 必然；确实；确实的事情</p>
-</blockquote>
-<h3 id="20-ist"><a href="#20-ist" class="headerlink" title="20. ist"></a>20. ist</h3><p>名词后缀，表示学者。</p>
-<h4 id="例词：-19"><a href="#例词：-19" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>biologist = bi + o + log + ist</p>
-<p>n. 生物学家 </p>
-</blockquote>
-<h3 id="21-ic、ique"><a href="#21-ic、ique" class="headerlink" title="21. ic、ique"></a>21. ic、ique</h3><p>形容词后缀。</p>
-<h4 id="例词：-20"><a href="#例词：-20" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>biologic = bi + o + log + ic</p>
-<p>adj. 生物的；生物学的</p>
-</blockquote>
-<p>有一个与它读音相近的后缀ique，它是名词后缀。</p>
-<h4 id="例词：-21"><a href="#例词：-21" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>technique = techn + ique</p>
-<p>n. 技巧，技术；手法</p>
-</blockquote>
-<h3 id="22-logy"><a href="#22-logy" class="headerlink" title="22. logy"></a>22. logy</h3><p>名词后缀，表示学说，由log + y组合而成。</p>
-<h4 id="例词：-22"><a href="#例词：-22" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>biology = bi + o + logy</p>
-<p>n. （一个地区全部的）生物；生物学</p>
-</blockquote>
-<h3 id="23-ism"><a href="#23-ism" class="headerlink" title="23. ism"></a>23. ism</h3><p>名词后缀，表示……主义。</p>
-<h4 id="例词：-23"><a href="#例词：-23" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>biologism = bi + o + log + ism</p>
-<p>n. 生物主义</p>
-</blockquote>
-<p>也有asm这个后缀，用于表示一些抽象的概念。</p>
-<blockquote>
-<p>orgasm = org + asm</p>
-<p>n. 极度兴奋 <del>（还有别的意思，这里删减了）</del></p>
-</blockquote>
-<h3 id="24-ics"><a href="#24-ics" class="headerlink" title="24. ics"></a>24. ics</h3><p>名词后缀，表示学说，与logy类似。</p>
-<h4 id="例词：-24"><a href="#例词：-24" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>statics = stat + ics</p>
-<p>n. [力] 静力学</p>
-</blockquote>
-<h3 id="25-ure"><a href="#25-ure" class="headerlink" title="25. ure"></a>25. ure</h3><p>名词后缀，偶尔表示动词。</p>
-<h4 id="例词：-25"><a href="#例词：-25" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>structure = struct + ure</p>
-<p>n. 结构；构造；建筑物<br>vt. 组织；构成；建造</p>
-</blockquote>
-<h3 id="26-ment"><a href="#26-ment" class="headerlink" title="26. ment"></a>26. ment</h3><p>名词后缀。</p>
-<h4 id="例词：-26"><a href="#例词：-26" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>apartment = a + part + ment</p>
-<p>n. 公寓；房间</p>
-</blockquote>
-<h3 id="27-de族"><a href="#27-de族" class="headerlink" title="27. (@)de族"></a>27. (@)de族</h3><p>(@)de族共包含ade、ude。名词后缀。</p>
-<h4 id="例词：-27"><a href="#例词：-27" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>parade = par + ade</p>
-<p>n. 游行；阅兵；炫耀；行进；阅兵场<br>vt. 游行；炫耀；列队行进<br>vi. 游行；炫耀；列队行进</p>
-<p>altitude = alt + it + ude</p>
-<p>n. 高地；高度；[数] 顶垂线；（等级和地位等的）高级；海拔</p>
-</blockquote>
-<h3 id="28-fy"><a href="#28-fy" class="headerlink" title="28. fy"></a>28. fy</h3><p>动词后缀。</p>
-<h4 id="例词：-28"><a href="#例词：-28" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>purify = pur + i + fy</p>
-<p>vt. 净化；使纯净<br>vi. 净化；变纯净</p>
-</blockquote>
-<h3 id="29-age"><a href="#29-age" class="headerlink" title="29. age"></a>29. age</h3><p>名词后缀。</p>
-<h4 id="例词：-29"><a href="#例词：-29" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>passage = pass + age</p>
-<p>n. 一段（文章）；走廊；通路；通过；旅程，行程；船费</p>
-</blockquote>
-<h3 id="30-cle族"><a href="#30-cle族" class="headerlink" title="30. (@)cle族"></a>30. (@)cle族</h3><p>(@)cle族共包含icle、acle。名词后缀。</p>
-<h4 id="例词：-30"><a href="#例词：-30" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>obstacle = ob + st + acle</p>
-<p>n. 障碍，干扰，妨碍；障碍物</p>
-<p>article = art + icle</p>
-<p>n. 文章；物品；条款；[语] 冠词<br>vt. 订约将…收为学徒或见习生；使…受协议条款的约束<br>vi. 签订协议；进行控告</p>
-</blockquote>
-<h3 id="31-ice"><a href="#31-ice" class="headerlink" title="31. ice"></a>31. ice</h3><p>名词后缀。</p>
-<h4 id="例词：-31"><a href="#例词：-31" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>novice = nov + ice</p>
-<p>n. 初学者，新手</p>
-</blockquote>
-<h3 id="32-acy"><a href="#32-acy" class="headerlink" title="32. acy"></a>32. acy</h3><p>名词后缀。</p>
-<h4 id="例词：-32"><a href="#例词：-32" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>diplomacy = di + plom + acy</p>
-<p>n. 外交；外交手腕；交际手段</p>
-</blockquote>
-<h3 id="33-ish"><a href="#33-ish" class="headerlink" title="33. ish"></a>33. ish</h3><p>动词或形容词后缀。</p>
-<h4 id="例词：-33"><a href="#例词：-33" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>publish = publ + ish</p>
-<p>vt. 出版；发表；公布<br>vi. 出版；发行；刊印</p>
-<p>selfish = self + ish</p>
-<p>adj. 自私的；利己主义的</p>
-</blockquote>
-<h3 id="34-sis族"><a href="#34-sis族" class="headerlink" title="34. (@)sis族"></a>34. (@)sis族</h3><p>(@)sis族共包含asis、osis。名词后缀，与疾病相关。</p>
-<h4 id="例词：-34"><a href="#例词：-34" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>hemostasis = hemo(血) + st(站，停止) + asis</p>
-<p>n. [医] 止血；止血法</p>
-<p>neurosis = neur + osis</p>
-<p>n. [心理] 神经症；神经衰弱症</p>
-</blockquote>
-<h3 id="35-et族"><a href="#35-et族" class="headerlink" title="35. (@)et族"></a>35. (@)et族</h3><p>(@)et族共包含et、let、ette。名词后缀，用来表示较小的物品。与on不同的是，on一般表示的是微观的粒子或者是生物，et更多表示生活中的物品。</p>
-<h4 id="例词：-35"><a href="#例词：-35" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>cigarette = cigar(雪茄) + ette</p>
-<p>n. 香烟；纸烟</p>
-<p>coverlet = cover + let</p>
-<p>n. 被单；床罩</p>
-<p>circlet = circl + et</p>
-<p>n. 小圈；戒指，饰环</p>
-</blockquote>
-<h3 id="36-y"><a href="#36-y" class="headerlink" title="36. y"></a>36. y</h3><p>名词后缀。</p>
-<h4 id="例词：-36"><a href="#例词：-36" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>beauty = beaut + y</p>
-<p>n. 美；美丽；美人；美好的东西</p>
-</blockquote>
-<h3 id="37-ine"><a href="#37-ine" class="headerlink" title="37. ine"></a>37. ine</h3><p>名词或形容词后缀。</p>
-<h4 id="例词：-37"><a href="#例词：-37" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>marine = mar + ine</p>
-<p>adj. 船舶的；海生的；海产的；航海的，海运的<br>n. 海运业；舰队；水兵；（海军）士兵或军官</p>
-</blockquote>
-<h3 id="38-less"><a href="#38-less" class="headerlink" title="38. less"></a>38. less</h3><p>形容词后缀，表示没有。</p>
-<h4 id="例词：-38"><a href="#例词：-38" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>homeless = home + less</p>
-<p>adj. 无家可归的</p>
-</blockquote>
-<h3 id="39-ness"><a href="#39-ness" class="headerlink" title="39. ness"></a>39. ness</h3><p>名词后缀。</p>
-<h4 id="例词：-39"><a href="#例词：-39" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>necessariness = ne + cess + ary + ness</p>
-<p>n. 必要性</p>
-</blockquote>
-<h3 id="40-ful"><a href="#40-ful" class="headerlink" title="40. ful"></a>40. ful</h3><p>形容词后缀，表示多(full)。</p>
-<h4 id="例词：-40"><a href="#例词：-40" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>beautiful = beaut + i + ful</p>
-<p>adj. 美丽的；出色的；迷人的</p>
-</blockquote>
-<h3 id="41-ship"><a href="#41-ship" class="headerlink" title="41. ship"></a>41. ship</h3><p>名词后缀，表示抽象含义。</p>
-<h4 id="例词：-41"><a href="#例词：-41" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>relationship = re + lat + ion + ship</p>
-<p>n. 关系；关联</p>
-</blockquote>
-<h3 id="42-ese"><a href="#42-ese" class="headerlink" title="42. ese"></a>42. ese</h3><p>名词后缀，表示某国家的人或语言。</p>
-<h3 id="43-hood"><a href="#43-hood" class="headerlink" title="43. hood"></a>43. hood</h3><p>名词后缀，表示抽象含义，地点或一段时间等等。</p>
-<h4 id="例词：-42"><a href="#例词：-42" class="headerlink" title="例词："></a>例词：</h4><blockquote>
-<p>childhood = child + hood</p>
-<p>n. 童年时期；幼年时代</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>英语</category>
-      </categories>
-      <tags>
-        <tag>单词</tag>
-        <tag>词缀</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown使用总结</title>
-    <url>/2021/02/17/0218-markdown-shi-yong-zong-jie/</url>
-    <content><![CDATA[<p>继续挖坑（doge）</p>
-<h2 id="1-图片"><a href="#1-图片" class="headerlink" title="1. 图片"></a>1. 图片</h2><ul>
-<li>法1.html标签</li>
-</ul>
-<p>&lt;~img src=”/images/微信截图_20210218165207.png” width=”30%” alt=”前三项” &gt;</p>
-<ul>
-<li>法2.markdown自带语句</li>
-</ul>
-<p>缺点：不能改变大小。</p>
-<blockquote>
-<p>!~<a href="/images/微信截图_20210218165659.png">后三项</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -1140,6 +1078,132 @@ D = \left| {\begin{matrix}
       </tags>
   </entry>
   <entry>
+    <title>Latex使用总结</title>
+    <url>/2021/02/17/0217-latex-shi-yong-zong-jie/</url>
+    <content><![CDATA[<p>再开一坑~最近开始使用latex进行一些排版、公式编辑。整理成一篇博客，方便大家也方便自己。</p>
+<h2 id="0-latex代码来源"><a href="#0-latex代码来源" class="headerlink" title="0. latex代码来源"></a>0. latex代码来源</h2><p>像我这么懒的人，latex代码自然不会自己写啦(doge)。</p>
+<p><img src="/images/21021701.png" alt="Alt text"></p>
+<h2 id="1-矩阵"><a href="#1-矩阵" class="headerlink" title="1. 矩阵"></a>1. 矩阵</h2><p>以3*3的矩阵为例：</p>
+<script type="math/tex; mode=display">
+\begin{matrix}
+{a_{11} }&{a_{12} }&{a_{13} }\\
+{a_{21} }&{a_{22} }&{a_{23} }\\
+{a_{31} }&{a_{32} }&{a_{33} }
+\end{matrix}</script><blockquote>
+<p>“ \begin{matrix}<br>{a<em>{11} }&amp;{a</em>{12} }&amp;{a<em>{13} }\<br>{a</em>{21} }&amp;{a<em>{22} }&amp;{a</em>{23} }\<br>{a<em>{31} }&amp;{a</em>{32} }&amp;{a_{33} }<br>\end{matrix} “</p>
+</blockquote>
+<p>首尾需要加入两个$。</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>Latex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>线性代数基础系列（0）——intro</title>
+    <url>/2021/02/17/0217-xian-xing-dai-shu-da-gang/</url>
+    <content><![CDATA[<h1 id="线性代数大纲"><a href="#线性代数大纲" class="headerlink" title="线性代数大纲"></a>线性代数大纲</h1><p>新开一坑，记录考研复习第一轮中的线性代数部分。这篇博客只会给出思维导图式的框架，不会给出具体内容。<br>另外，Xmind可以支持转markdown，简直是不要太方便。Xmind打钱(doge)。</p>
+<h2 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h2><h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><h2 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h2><h2 id="方程组"><a href="#方程组" class="headerlink" title="*方程组"></a>*方程组</h2><p>重要考点。</p>
+<h2 id="特征值"><a href="#特征值" class="headerlink" title="*特征值"></a>*特征值</h2><p>重要考点。</p>
+<h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2>]]></content>
+      <categories>
+        <category>线性代数</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+        <tag>线性代数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo优化记录</title>
+    <url>/2021/02/18/0218-hexo-mei-hua/</url>
+    <content><![CDATA[<h2 id="1-一些美化参考"><a href="#1-一些美化参考" class="headerlink" title="1.一些美化参考"></a>1.一些美化参考</h2><p><a href="https://zhuanlan.zhihu.com/p/69211731">https://zhuanlan.zhihu.com/p/69211731</a></p>
+<p><a href="https://blog.csdn.net/baidu_30446883/article/details/86684206?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control">https://blog.csdn.net/baidu_30446883/article/details/86684206?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/112229976">https://zhuanlan.zhihu.com/p/112229976</a></p>
+<p><a href="https://link.zhihu.com/?target=https%3A//blog.csdn.net/ixygj197875/article/details/79338360">https://link.zhihu.com/?target=https%3A//blog.csdn.net/ixygj197875/article/details/79338360</a></p>
+<p><a href="https://www.itrhx.com/">https://www.itrhx.com/</a></p>
+<p><a href="https://blog.csdn.net/victoryxa/article/details/103733655">https://blog.csdn.net/victoryxa/article/details/103733655</a></p>
+<p><a href="https://blog.hvnobug.com/post/hexo-optimize.html#2-aplayer%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95">https://blog.hvnobug.com/post/hexo-optimize.html#2-aplayer%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95</a></p>
+<p><a href="https://blog.csdn.net/QFREX/article/details/108798945">https://blog.csdn.net/QFREX/article/details/108798945</a></p>
+<p><a href="https://blog.csdn.net/cungudafa/article/details/106278206">https://blog.csdn.net/cungudafa/article/details/106278206</a></p>
+<p><a href="https://blog.csdn.net/weixin_39759247/article/details/107055255?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control">https://blog.csdn.net/weixin_39759247/article/details/107055255?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control</a></p>
+<p>优化代码块<br><a href="https://blog.csdn.net/weixin_45682081/article/details/105992558">https://blog.csdn.net/weixin_45682081/article/details/105992558</a></p>
+<p><a href="https://blog.csdn.net/qq_40922859/article/details/100877777?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.baidujs&amp;dist_request_id=c8ee25cf-1c1a-47a0-bfcb-3d32e482c8e6&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.baidujs">https://blog.csdn.net/qq_40922859/article/details/100877777?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.baidujs&amp;dist_request_id=c8ee25cf-1c1a-47a0-bfcb-3d32e482c8e6&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.baidujs</a></p>
+<p>js games<br><a href="https://js13kgames.com/">https://js13kgames.com/</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/57789538">https://zhuanlan.zhihu.com/p/57789538</a></p>
+<h2 id="2-markdown的截图体验"><a href="#2-markdown的截图体验" class="headerlink" title="2.markdown的截图体验"></a>2.markdown的截图体验</h2><p>只能说markdown插入图片的方式真的不太友好，非常麻烦！<br>所以，使用github图床+ vscode + picgo实现丝滑的截图写作体验。</p>
+<h3 id="2-1-首先准备github图床。"><a href="#2-1-首先准备github图床。" class="headerlink" title="2.1 首先准备github图床。"></a>2.1 首先准备github图床。</h3><p>github账号就不用多说了吧，接着创建一个public的仓库，并创建好master分支。</p>
+<p>接下来，创建github的个人令牌。</p>
+<p>settings -&gt; developer settings -&gt; github apps</p>
+<p><img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210223162300.png" alt="20210223162300"></p>
+<p>保存一下给你的字符串，<strong>有用</strong>！</p>
+<h3 id="2-2-picgo"><a href="#2-2-picgo" class="headerlink" title="2.2 picgo"></a>2.2 picgo</h3><p>到vscode的插件区下载picgo。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210223162334.png" alt="20210223162334"></p>
+<p>并填写picgo的extension setting。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210223162502.png" alt="20210223162502"></p>
+<h3 id="2-3-cdn加速"><a href="#2-3-cdn加速" class="headerlink" title="2.3 cdn加速"></a>2.3 cdn加速</h3><p><img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210223162515.png" alt="20210223162515"></p>
+<p>引用自：<a href="https://blog.csdn.net/qq_35621494/article/details/106432399?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&amp;spm=1001.2101.3001.4242">https://blog.csdn.net/qq_35621494/article/details/106432399?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&amp;spm=1001.2101.3001.4242</a><br><strong>感谢！</strong></p>
+<h3 id="2-4-可以啦！"><a href="#2-4-可以啦！" class="headerlink" title="2.4 可以啦！"></a>2.4 可以啦！</h3><p>使用ctrl+alt+u粘贴剪贴板上的图片，这张图片就会自动上传到github，并且会在你的markdown文档中自动出现~</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo移植</title>
+    <url>/2021/02/21/0221-hexo-yi-zhi/</url>
+    <content><![CDATA[<p>啊！今天换了新电脑，于是想把hexo移植到新电脑上，继续写博客。</p>
+<p>记录一下移植的过程。</p>
+<p>1.首先是安装nodejs和git。</p>
+<p>nodejs安装教程：<a href="https://blog.csdn.net/qq_43285335/article/details/90696126">https://blog.csdn.net/qq_43285335/article/details/90696126</a></p>
+<p>git安装教程：<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a></p>
+<p>2.拷贝项目文件夹<br>安装完nodejs和git之后，把原来电脑的博客文件夹都拷贝过来（就是hexoblog的母文件夹）</p>
+<p>3.拷贝.ssh文件夹<br>在C:/Username/.ssh保存连接的秘钥，需要把它拷贝到新电脑对应的地方。</p>
+<p>4.配置一下git的用户名与邮箱</p>
+<p><a href="https://www.cnblogs.com/zle1992/p/9087713.html">https://www.cnblogs.com/zle1992/p/9087713.html</a></p>
+<p>可以和第一步一起做啦。</p>
+<p>5.尝试一下<br>hexo s<br>hexo d</p>
+<p>最后补充，跑通的前提是你之前那台电脑就能跑通~亲测有效。</p>
+<p>参考：<a href="https://hexoscript.gitbook.io/hexo-script/v/1.3-1/shi-yong-bu-zhou/yi-jian-bu-shu-hexo-bo-ke">https://hexoscript.gitbook.io/hexo-script/v/1.3-1/shi-yong-bu-zhou/yi-jian-bu-shu-hexo-bo-ke</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>移植</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown使用总结</title>
+    <url>/2021/02/17/0218-markdown-shi-yong-zong-jie/</url>
+    <content><![CDATA[<p>继续挖坑（doge）</p>
+<h2 id="1-图片"><a href="#1-图片" class="headerlink" title="1. 图片"></a>1. 图片</h2><ul>
+<li>法1.html标签</li>
+</ul>
+<p>&lt;~img src=”/images/微信截图_20210218165207.png” width=”30%” alt=”前三项” &gt;</p>
+<ul>
+<li>法2.markdown自带语句</li>
+</ul>
+<p>缺点：不能改变大小。</p>
+<blockquote>
+<p>!~<a href="/images/微信截图_20210218165659.png">后三项</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>线性代数基础系列（3）——矩阵与线性方程组</title>
     <url>/2021/02/21/0221-ju-zhen-yu-xian-xing-fang-cheng-zu/</url>
     <content><![CDATA[<h1 id="矩阵与线性方程组"><a href="#矩阵与线性方程组" class="headerlink" title="矩阵与线性方程组"></a>矩阵与线性方程组</h1><p>很快啊（doge），马上到第三章了。第二章我们介绍了矩阵这一个新定义的算子，现在我们要把这个算子投入运用———即解线性方程组中。在解之前呢，需要补充一些前置知识，例如高斯消元法、矩阵的秩等等，综合这些知识，我们就又新点了一个技能点了。</p>
@@ -1341,223 +1405,6 @@ A&0\\
       </tags>
   </entry>
   <entry>
-    <title>Hexo移植</title>
-    <url>/2021/02/21/0221-hexo-yi-zhi/</url>
-    <content><![CDATA[<p>啊！今天换了新电脑，于是想把hexo移植到新电脑上，继续写博客。</p>
-<p>记录一下移植的过程。</p>
-<p>1.首先是安装nodejs和git。</p>
-<p>nodejs安装教程：<a href="https://blog.csdn.net/qq_43285335/article/details/90696126">https://blog.csdn.net/qq_43285335/article/details/90696126</a></p>
-<p>git安装教程：<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a></p>
-<p>2.拷贝项目文件夹<br>安装完nodejs和git之后，把原来电脑的博客文件夹都拷贝过来（就是hexoblog的母文件夹）</p>
-<p>3.拷贝.ssh文件夹<br>在C:/Username/.ssh保存连接的秘钥，需要把它拷贝到新电脑对应的地方。</p>
-<p>4.配置一下git的用户名与邮箱</p>
-<p><a href="https://www.cnblogs.com/zle1992/p/9087713.html">https://www.cnblogs.com/zle1992/p/9087713.html</a></p>
-<p>可以和第一步一起做啦。</p>
-<p>5.尝试一下<br>hexo s<br>hexo d</p>
-<p>最后补充，跑通的前提是你之前那台电脑就能跑通~亲测有效。</p>
-<p>参考：<a href="https://hexoscript.gitbook.io/hexo-script/v/1.3-1/shi-yong-bu-zhou/yi-jian-bu-shu-hexo-bo-ke">https://hexoscript.gitbook.io/hexo-script/v/1.3-1/shi-yong-bu-zhou/yi-jian-bu-shu-hexo-bo-ke</a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>移植</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo优化记录</title>
-    <url>/2021/02/18/0218-hexo-mei-hua/</url>
-    <content><![CDATA[<h2 id="1-一些美化参考"><a href="#1-一些美化参考" class="headerlink" title="1.一些美化参考"></a>1.一些美化参考</h2><p><a href="https://zhuanlan.zhihu.com/p/69211731">https://zhuanlan.zhihu.com/p/69211731</a></p>
-<p><a href="https://blog.csdn.net/baidu_30446883/article/details/86684206?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control">https://blog.csdn.net/baidu_30446883/article/details/86684206?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/112229976">https://zhuanlan.zhihu.com/p/112229976</a></p>
-<p><a href="https://link.zhihu.com/?target=https%3A//blog.csdn.net/ixygj197875/article/details/79338360">https://link.zhihu.com/?target=https%3A//blog.csdn.net/ixygj197875/article/details/79338360</a></p>
-<p><a href="https://www.itrhx.com/">https://www.itrhx.com/</a></p>
-<p><a href="https://blog.csdn.net/victoryxa/article/details/103733655">https://blog.csdn.net/victoryxa/article/details/103733655</a></p>
-<p><a href="https://blog.hvnobug.com/post/hexo-optimize.html#2-aplayer%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95">https://blog.hvnobug.com/post/hexo-optimize.html#2-aplayer%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E5%8D%95</a></p>
-<p><a href="https://blog.csdn.net/QFREX/article/details/108798945">https://blog.csdn.net/QFREX/article/details/108798945</a></p>
-<p><a href="https://blog.csdn.net/cungudafa/article/details/106278206">https://blog.csdn.net/cungudafa/article/details/106278206</a></p>
-<p><a href="https://blog.csdn.net/weixin_39759247/article/details/107055255?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control">https://blog.csdn.net/weixin_39759247/article/details/107055255?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control</a></p>
-<p>优化代码块<br><a href="https://blog.csdn.net/weixin_45682081/article/details/105992558">https://blog.csdn.net/weixin_45682081/article/details/105992558</a></p>
-<p><a href="https://blog.csdn.net/qq_40922859/article/details/100877777?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.baidujs&amp;dist_request_id=c8ee25cf-1c1a-47a0-bfcb-3d32e482c8e6&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.baidujs">https://blog.csdn.net/qq_40922859/article/details/100877777?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.baidujs&amp;dist_request_id=c8ee25cf-1c1a-47a0-bfcb-3d32e482c8e6&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.baidujs</a></p>
-<p>js games<br><a href="https://js13kgames.com/">https://js13kgames.com/</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/57789538">https://zhuanlan.zhihu.com/p/57789538</a></p>
-<h2 id="2-markdown的截图体验"><a href="#2-markdown的截图体验" class="headerlink" title="2.markdown的截图体验"></a>2.markdown的截图体验</h2><p>只能说markdown插入图片的方式真的不太友好，非常麻烦！<br>所以，使用github图床+ vscode + picgo实现丝滑的截图写作体验。</p>
-<h3 id="2-1-首先准备github图床。"><a href="#2-1-首先准备github图床。" class="headerlink" title="2.1 首先准备github图床。"></a>2.1 首先准备github图床。</h3><p>github账号就不用多说了吧，接着创建一个public的仓库，并创建好master分支。</p>
-<p>接下来，创建github的个人令牌。</p>
-<p>settings -&gt; developer settings -&gt; github apps</p>
-<p><img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210223162300.png" alt="20210223162300"></p>
-<p>保存一下给你的字符串，<strong>有用</strong>！</p>
-<h3 id="2-2-picgo"><a href="#2-2-picgo" class="headerlink" title="2.2 picgo"></a>2.2 picgo</h3><p>到vscode的插件区下载picgo。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210223162334.png" alt="20210223162334"></p>
-<p>并填写picgo的extension setting。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210223162502.png" alt="20210223162502"></p>
-<h3 id="2-3-cdn加速"><a href="#2-3-cdn加速" class="headerlink" title="2.3 cdn加速"></a>2.3 cdn加速</h3><p><img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210223162515.png" alt="20210223162515"></p>
-<p>引用自：<a href="https://blog.csdn.net/qq_35621494/article/details/106432399?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&amp;spm=1001.2101.3001.4242">https://blog.csdn.net/qq_35621494/article/details/106432399?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&amp;spm=1001.2101.3001.4242</a><br><strong>感谢！</strong></p>
-<h3 id="2-4-可以啦！"><a href="#2-4-可以啦！" class="headerlink" title="2.4 可以啦！"></a>2.4 可以啦！</h3><p>使用ctrl+alt+u粘贴剪贴板上的图片，这张图片就会自动上传到github，并且会在你的markdown文档中自动出现~</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《阅读的逻辑》读后总结</title>
-    <url>/2021/03/01/0301-reading-skills/</url>
-    <content><![CDATA[<p>最近看了唐迟老师的《阅读的逻辑》，现在写读后总结和大家分享一下。</p>
-<h2 id="PART1-金句"><a href="#PART1-金句" class="headerlink" title="PART1 金句"></a>PART1 金句</h2><p>首先，先列出一些书中我认为比较有用的金句。</p>
-<p>1.在英语考试的阅读题型中，一旦“总结”就会偏于主观，就犯了考试的大忌——“一百个人心中有一百个哈姆雷特”，觉得每个选项都有道理，以至于难以找到正确答案。</p>
-<blockquote>
-<p>避免总结，提倡定位，依据原文找到答案。</p>
-</blockquote>
-<p>2.对于应试考试而言，摸清楚命题人觉得选谁才是更重要的。</p>
-<blockquote>
-<p>不要你觉得，而是要命题人觉得。</p>
-</blockquote>
-<p>3.互为相反选项中往往会有一个正确答案。互为相似选项可能可以直接排除。</p>
-<p>4.对代词敏感，有助于解答新题型。</p>
-<blockquote>
-<p>通常 the,this,these,those,such + 名词 出现，意味着该处指代前文曾出现过的名词。</p>
-</blockquote>
-<p>5.<strong>细节服从主旨。</strong></p>
-<p>6.动词词组的核心在介词。</p>
-<blockquote>
-<p>如果在阅读中遇到不熟悉的词组，可以通过一个介词相同的词组来推测，通常意思上相近，至少逻辑上保持一致。</p>
-</blockquote>
-<p>7.实验过程往往并非重点，真正需要重点关注的是该实验要证明的观点或得出的结论。</p>
-<p>8.正确选项拒绝推理，要有一说一。考官命题喜欢设置偷换概念的强干扰项，变为有一说二。对每个选项的表达，要在原文看是否能找到原词重现或是同义替换。正确答案一定是在原文中能找到依据的。</p>
-<p>9.干扰选项的典型特征是信息的拼凑，为了迷惑考生。</p>
-<p>10.考研阅读的答案不是选出来的，而是比较出来的。</p>
-<p>11.反复强调的是重点，重点是考点。</p>
-<p>12.选择最佳答案而非正确答案。</p>
-<h2 id="PART2-阅读的本质——逻辑关系"><a href="#PART2-阅读的本质——逻辑关系" class="headerlink" title="PART2 阅读的本质——逻辑关系"></a>PART2 阅读的本质——逻辑关系</h2><p>逻辑关系分为三种，句间逻辑、段间逻辑、题干逻辑。</p>
-<h3 id="1-句间逻辑"><a href="#1-句间逻辑" class="headerlink" title="1. 句间逻辑"></a>1. 句间逻辑</h3><p>为简化，将逻辑分为正逻辑（positive）与负逻辑（negative）。</p>
-<p>把因果、递进关系归为正逻辑；将让步、转折关系归为负逻辑。</p>
-<ul>
-<li>方法论1： 首先，找到文段中表达的核心对象，接着对于描述其的语句就可以有情感分析，标（+）或（-）。</li>
-<li>方法论2： 如果下一句不出现负情绪关键词，则情感不变。</li>
-</ul>
-<h4 id="材料库"><a href="#材料库" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
-<p>表示相反的逻辑关联词：<br>常见的转折词：however,but,nonetheless,nevertheless,whereas,yet,rather than,instead of…<br>常见的让步词：although,though,even if,even though,despite,in spite of,regardless of…<br>某些副词和介词短语：conversely,contrarily,contrary to,on the contrary,by contrast,in contrast,unfortunately…<br>but有时也表示递进关系，instead也表示递进关系</p>
-<p>特殊标点符号的作用<br>冒号：前后是从抽象到具体的过程，后面进一步解析和说明前面的内容。<br>破折号：后面的内容对前面的内容起补充说明和评价判断的作用。<br>分号；表明前后呈并列关系，前后内容语义相同。<br>引号：1）引用他人话语；2）强调某一内容；3）反讽。</p>
-</blockquote>
-<h3 id="2-段间逻辑"><a href="#2-段间逻辑" class="headerlink" title="2. 段间逻辑"></a>2. 段间逻辑</h3><p>段间逻辑也是分为正负两个。下面的段落要么顺着继续说，要么将前面段的内容否定掉。</p>
-<blockquote>
-<p>方法论：首尾句串读法<br>读每个段的首句与尾局，获取每一段的主旨大意。首句更重要，需要更加注意，尾局只需快速读一下。如果尾局没有出现转折词，则说明其主旨大意和首句基本一致，如果有转折词，则需要着重读，可能会颠覆前面的观点。首尾段红出现转折的信息，应多加注意。<br>首尾段中的细节信息经常作为主旨题的干扰选项。这种情况下，我们更应该善用该方法，重视段落与段落之间的逻辑关系。</p>
-</blockquote>
-<h3 id="3-题干逻辑"><a href="#3-题干逻辑" class="headerlink" title="3. 题干逻辑"></a>3. 题干逻辑</h3><p>做题前务必先串读题干。因为五个题干信息之间也存在某些逻辑关系。</p>
-<blockquote>
-<p>先题后文，只看题干。</p>
-<ol>
-<li>获取关键词。某一单词多次出现，则它是主题关键词之一、</li>
-<li>预测个别题目的答案。</li>
-<li>预判文章内容。题干信息通常与原文写作信息保持一致，只要我们串读题干，则能大致把握文章的基本走向和写作思路，对文章内容进行预判。</li>
-</ol>
-</blockquote>
-<h2 id="PART3-阅读的灵魂——中心思想"><a href="#PART3-阅读的灵魂——中心思想" class="headerlink" title="PART3 阅读的灵魂——中心思想"></a>PART3 阅读的灵魂——中心思想</h2><p>中心思想是必考项目之一。下面介绍三种快速准确把握中心思想的方法。</p>
-<h3 id="1-首尾句串读法（最普适）"><a href="#1-首尾句串读法（最普适）" class="headerlink" title="1. 首尾句串读法（最普适）"></a>1. 首尾句串读法（最普适）</h3><p>与PART2介绍的方法是一样的，放在把握中心思想的用途也适用。</p>
-<h3 id="2-找中心词（最快最直观）"><a href="#2-找中心词（最快最直观）" class="headerlink" title="2. 找中心词（最快最直观）"></a>2. 找中心词（最快最直观）</h3><p>某一单词在文中反复出现，则它就是中心词。需要多多留意中心词和它改写后的中心词。</p>
-<blockquote>
-<p>中心词在选项中的特征<br>近年真题的选项中，中心词不再是原词重现，而是多以同义替换的形式出现。<br>一篇文章的中心词可能有多个，只有内容全面的选项才是最佳答案。干扰选项的特征可能只是其中一个中心词，而漏掉了其他中心词。</p>
-</blockquote>
-<h3 id="3-中心句（可根据形式判断）"><a href="#3-中心句（可根据形式判断）" class="headerlink" title="3. 中心句（可根据形式判断）"></a>3. 中心句（可根据形式判断）</h3><p>首先是中心句的定义：一般来说，1）独句成段；2）文首的问句和回答 都是中心句，请不要忽视。</p>
-<h4 id="材料库-1"><a href="#材料库-1" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
-<p>情态动词的逻辑<br>情态动词should,would,could,must,can,may,might之后往往代表的是作者的主观看法或愿望，自然就和作者的态度观点相关，进而与全文的中心思想相关。</p>
-</blockquote>
-<h2 id="PART4-阅读的方向——感情色彩"><a href="#PART4-阅读的方向——感情色彩" class="headerlink" title="PART4 阅读的方向——感情色彩"></a>PART4 阅读的方向——感情色彩</h2><p>一篇文章的中心主旨通常由两部分构成。1）关键词，也就是中心词；2）态度，这就意味着考生在阅读过程中应对作者的感情色彩用词进行标记。</p>
-<p>感情色彩分为三类：褒义（肯定），贬义（否定）、中性。<br>作者的观点态度也可以分为三类：积极、消极、客观。</p>
-<p>下面是寻找感情色彩的方法</p>
-<h3 id="1-首尾句串读法"><a href="#1-首尾句串读法" class="headerlink" title="1. 首尾句串读法"></a>1. 首尾句串读法</h3><p>三杀！中心即态度，态度即中心，所以找到中心就是找到了态度。</p>
-<h3 id="2-形容词-amp-副词"><a href="#2-形容词-amp-副词" class="headerlink" title="2. 形容词&amp;副词"></a>2. 形容词&amp;副词</h3><p>它们是带有感情色彩的词，所以应该多留意形容词和副词。</p>
-<p>还有一些名词和动词也具有感情色彩，需要额外留意。</p>
-<h3 id="3-转折后"><a href="#3-转折后" class="headerlink" title="3. 转折后"></a>3. 转折后</h3><p>文章作者通常都会将自己的观点和态度在转折之后表达出来。转折之后是重点。</p>
-<h3 id="4-情态动词之后"><a href="#4-情态动词之后" class="headerlink" title="4. 情态动词之后"></a>4. 情态动词之后</h3><h4 id="材料库-2"><a href="#材料库-2" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
-<p>情态动词的逻辑<br>情态动词should,would,could,must,can,may,might之后往往代表的是作者的主观看法或愿望，自然就和作者的态度观点相关，进而与全文的中心思想相关。</p>
-</blockquote>
-<h2 id="PART5-阅读的规律——行文特点"><a href="#PART5-阅读的规律——行文特点" class="headerlink" title="PART5 阅读的规律——行文特点"></a>PART5 阅读的规律——行文特点</h2><h3 id="1-时间对比原则"><a href="#1-时间对比原则" class="headerlink" title="1. 时间对比原则"></a>1. 时间对比原则</h3><p>时间对比指的是一篇文章的作者往往通过时间的对比来表现某一事物的前后差异和发展过程。在这个过程中，过去和现在所发生的事情往往体现出截然相反的状态和结果。重点关注“现在”的内容，它通常预示着一篇文章的中心主旨。</p>
-<p>“时间相反，一切相反”。</p>
-<h4 id="材料库-3"><a href="#材料库-3" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
-<p>used to,no longer,while,today,now。<br>used to 表示过去常常做某事，潜台词是现在不做了。<br>while作为连词表示当…时，考研阅读中更多表示对比“虽然，然而”的含义。</p>
-</blockquote>
-<h3 id="2-少数派原则"><a href="#2-少数派原则" class="headerlink" title="2. 少数派原则"></a>2. 少数派原则</h3><p>考研中作者的观点和态度通常是标新立异的，如果是大众熟知的就没必要在写文章了。一般大多数人都认为的，作者的观点就是与其相反的。</p>
-<p>一般还会设置一个与“少数派”相反的观点，用“常识性”的选项来误导学生。</p>
-<h4 id="材料库-4"><a href="#材料库-4" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
-<p>表示少数的：few,little,seldom,rarely,scarcely…</p>
-</blockquote>
-<h3 id="3-不同单词、表达指代同一事物"><a href="#3-不同单词、表达指代同一事物" class="headerlink" title="3. 不同单词、表达指代同一事物"></a>3. 不同单词、表达指代同一事物</h3><h4 id="材料库-5"><a href="#材料库-5" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
-<p>this,that,these,those,such,the…</p>
-</blockquote>
-<p>特别注重“指代”这一逻辑阅读法，通常文章反复改写的就是全文的关键词。</p>
-<h2 id="PART6-阅读的题型——有技可循"><a href="#PART6-阅读的题型——有技可循" class="headerlink" title="PART6 阅读的题型——有技可循"></a>PART6 阅读的题型——有<em>技</em>可循</h2><p>从PART2-PART5，已经给了不少方法论，现在将这些方法论对应到各题型中，使得做题可以对症下药。</p>
-<p>通过考试大纲，总结出八种题型/能力考查点：</p>
-<p>P209</p>
-<h3 id="1-主旨题"><a href="#1-主旨题" class="headerlink" title="1. 主旨题"></a>1. 主旨题</h3><blockquote>
-<p>常见的题干信息词有：main idea,mainly talk about,mainly discuss,the best title/subject…</p>
-<p>方法论：对应第二章的三个方法：首尾句串读法、中心词法、中心句法。</p>
-</blockquote>
-<h3 id="2-细节题"><a href="#2-细节题" class="headerlink" title="2. 细节题"></a>2. 细节题</h3><p>细节题的数量是最多的，形式也是最多的。</p>
-<blockquote>
-<p>常见的问法：是什么？为什么？怎么样？</p>
-<p>方法论：定位题干信息。题干信息在原文有可能以原词的形式出现，也有可能进行某种程度上的改写。通常情况下，细节题定位到的地方（一般不超过三句话的范围）就会出现它对应的答案。</p>
-<p>细节题常见的干扰项有以下几种：1）细节信息的拼凑；2）常识干扰；3）反向干扰；4）用文中其他部分的信息进行无关干扰。</p>
-</blockquote>
-<h3 id="3-例证题"><a href="#3-例证题" class="headerlink" title="3. 例证题"></a>3. 例证题</h3><p>例证题对应八种能力中的第八条：区分论点和论据。</p>
-<blockquote>
-<p>常见的题干信息词有：example,case,demonstrate,illustrate,cite,quote,show等表达。</p>
-</blockquote>
-<p>对于例证题，解题思路只有一个原则，就是例子支撑的永远是观点，也就是说，只有找到观点才能找到正确答案。</p>
-<blockquote>
-<p>一般来说，观点都出现在例子的前面。观点经常也是全文的主旨，所以找到主旨也能反向推出例证题的答案。</p>
-<p>例证题最常见的干扰项就是讨论例子本身，就事论事。阅读选项时一定要尽量<strong>绕开直接谈论例子的选项</strong>。</p>
-</blockquote>
-<h3 id="4-态度题"><a href="#4-态度题" class="headerlink" title="4. 态度题"></a>4. 态度题</h3><blockquote>
-<p>常见的题干信息词有attitude,seem,tone,deem,consider，以及选项中出现有关态度的词positive,negative等。</p>
-<p>方法论：见第三章的三个方法：首尾句串读法、形容词与副词、转折、情态动词。</p>
-<p>小墓碑选项：一直扮演着干扰选项的作用<br>1.不感兴趣类：uninterested,unconcerned,indifferent<br>2.不知所措类：confused,puzzled<br>3.主观偏激类：subjective,biased,prejudice,contemptuous</p>
-</blockquote>
-<p>遇到小墓碑选项，直接pass。</p>
-<h3 id="5-词汇-句子理解题"><a href="#5-词汇-句子理解题" class="headerlink" title="5. 词汇/句子理解题"></a>5. 词汇/句子理解题</h3><p>这个题型考查根据上下文推测生词词义的能力。</p>
-<blockquote>
-<p>题干信息通常非常明显，所考的词汇和句子会用引号引出来，题干会给出词句所在的具体位置，且原文大多会做下划线处理。</p>
-<p>方法论：摸清上下文的逻辑关系，即第一章的方法论。如果是相反的逻辑，则选反义词；否则选近义词。</p>
-<p>避免<strong>望文生义</strong>，即设置的干扰信息是用所考词或句本身字面含义进行干扰。还有一种干扰方式是所考词非常简单，但考熟词僻义，干扰选项弧设置成它较为常见的含义。</p>
-</blockquote>
-<h3 id="6-推理题"><a href="#6-推理题" class="headerlink" title="6. 推理题"></a>6. 推理题</h3><blockquote>
-<p>常见题干信息有：infer,imply,suggest,learn from…</p>
-<p>推理题不应该进行推理，因为答案必然出自原文，且与原文内容保持一致。不应该进行主观推测。</p>
-</blockquote>
-<p>通常答案有以下几个特征：</p>
-<blockquote>
-<p>1.答案就是对原文某个细节信息的改写，这种情况做起来跟细节题是一致的。<br>2.答案是对某一段落信息的总结，也就是对局部主旨的考查。这种情况下，考生应重点关注文中重复出现的信息。<br>3.<strong>转折处常常作为正确答案的命题点！</strong><br>4.<strong>选项中出现委婉表达(may,might,not necessarily)时有很大概率是正确答案！</strong></p>
-</blockquote>
-<h2 id="PART7-万法归一"><a href="#PART7-万法归一" class="headerlink" title="PART7 万法归一"></a>PART7 万法归一</h2><p>待续。</p>
-]]></content>
-      <categories>
-        <category>英语</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-        <tag>英语</tag>
-        <tag>阅读</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手刃机器学习（1）——SVM</title>
-    <url>/2021/02/27/0227-ml-svm/</url>
-    <content><![CDATA[<p>容我鸽一下！</p>
-]]></content>
-      <categories>
-        <category>机器学习</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-        <tag>分类模型</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《李焕英》、《唐探3》用户评论分析</title>
     <url>/2021/02/24/0224-movie-analysis/</url>
     <content><![CDATA[<p><strong>声明：爬取数据仅供学习用途</strong></p>
@@ -1699,6 +1546,160 @@ plt.show()
       <tags>
         <tag>数据分析</tag>
         <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《阅读的逻辑》读后总结</title>
+    <url>/2021/03/01/0301-reading-skills/</url>
+    <content><![CDATA[<p>最近看了唐迟老师的《阅读的逻辑》，现在写读后总结和大家分享一下。</p>
+<h2 id="PART1-金句"><a href="#PART1-金句" class="headerlink" title="PART1 金句"></a>PART1 金句</h2><p>首先，先列出一些书中我认为比较有用的金句。</p>
+<p>1.在英语考试的阅读题型中，一旦“总结”就会偏于主观，就犯了考试的大忌——“一百个人心中有一百个哈姆雷特”，觉得每个选项都有道理，以至于难以找到正确答案。</p>
+<blockquote>
+<p>避免总结，提倡定位，依据原文找到答案。</p>
+</blockquote>
+<p>2.对于应试考试而言，摸清楚命题人觉得选谁才是更重要的。</p>
+<blockquote>
+<p>不要你觉得，而是要命题人觉得。</p>
+</blockquote>
+<p>3.互为相反选项中往往会有一个正确答案。互为相似选项可能可以直接排除。</p>
+<p>4.对代词敏感，有助于解答新题型。</p>
+<blockquote>
+<p>通常 the,this,these,those,such + 名词 出现，意味着该处指代前文曾出现过的名词。</p>
+</blockquote>
+<p>5.<strong>细节服从主旨。</strong></p>
+<p>6.动词词组的核心在介词。</p>
+<blockquote>
+<p>如果在阅读中遇到不熟悉的词组，可以通过一个介词相同的词组来推测，通常意思上相近，至少逻辑上保持一致。</p>
+</blockquote>
+<p>7.实验过程往往并非重点，真正需要重点关注的是该实验要证明的观点或得出的结论。</p>
+<p>8.正确选项拒绝推理，要有一说一。考官命题喜欢设置偷换概念的强干扰项，变为有一说二。对每个选项的表达，要在原文看是否能找到原词重现或是同义替换。正确答案一定是在原文中能找到依据的。</p>
+<p>9.干扰选项的典型特征是信息的拼凑，为了迷惑考生。</p>
+<p>10.考研阅读的答案不是选出来的，而是比较出来的。</p>
+<p>11.反复强调的是重点，重点是考点。</p>
+<p>12.选择最佳答案而非正确答案。</p>
+<h2 id="PART2-阅读的本质——逻辑关系"><a href="#PART2-阅读的本质——逻辑关系" class="headerlink" title="PART2 阅读的本质——逻辑关系"></a>PART2 阅读的本质——逻辑关系</h2><p>逻辑关系分为三种，句间逻辑、段间逻辑、题干逻辑。</p>
+<h3 id="1-句间逻辑"><a href="#1-句间逻辑" class="headerlink" title="1. 句间逻辑"></a>1. 句间逻辑</h3><p>为简化，将逻辑分为正逻辑（positive）与负逻辑（negative）。</p>
+<p>把因果、递进关系归为正逻辑；将让步、转折关系归为负逻辑。</p>
+<ul>
+<li>方法论1： 首先，找到文段中表达的核心对象，接着对于描述其的语句就可以有情感分析，标（+）或（-）。</li>
+<li>方法论2： 如果下一句不出现负情绪关键词，则情感不变。</li>
+</ul>
+<h4 id="材料库"><a href="#材料库" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
+<p>表示相反的逻辑关联词：<br>常见的转折词：however,but,nonetheless,nevertheless,whereas,yet,rather than,instead of…<br>常见的让步词：although,though,even if,even though,despite,in spite of,regardless of…<br>某些副词和介词短语：conversely,contrarily,contrary to,on the contrary,by contrast,in contrast,unfortunately…<br>but有时也表示递进关系，instead也表示递进关系</p>
+<p>特殊标点符号的作用<br>冒号：前后是从抽象到具体的过程，后面进一步解析和说明前面的内容。<br>破折号：后面的内容对前面的内容起补充说明和评价判断的作用。<br>分号；表明前后呈并列关系，前后内容语义相同。<br>引号：1）引用他人话语；2）强调某一内容；3）反讽。</p>
+</blockquote>
+<h3 id="2-段间逻辑"><a href="#2-段间逻辑" class="headerlink" title="2. 段间逻辑"></a>2. 段间逻辑</h3><p>段间逻辑也是分为正负两个。下面的段落要么顺着继续说，要么将前面段的内容否定掉。</p>
+<blockquote>
+<p>方法论：首尾句串读法<br>读每个段的首句与尾局，获取每一段的主旨大意。首句更重要，需要更加注意，尾局只需快速读一下。如果尾局没有出现转折词，则说明其主旨大意和首句基本一致，如果有转折词，则需要着重读，可能会颠覆前面的观点。首尾段红出现转折的信息，应多加注意。<br>首尾段中的细节信息经常作为主旨题的干扰选项。这种情况下，我们更应该善用该方法，重视段落与段落之间的逻辑关系。</p>
+</blockquote>
+<h3 id="3-题干逻辑"><a href="#3-题干逻辑" class="headerlink" title="3. 题干逻辑"></a>3. 题干逻辑</h3><p>做题前务必先串读题干。因为五个题干信息之间也存在某些逻辑关系。</p>
+<blockquote>
+<p>先题后文，只看题干。</p>
+<ol>
+<li>获取关键词。某一单词多次出现，则它是主题关键词之一、</li>
+<li>预测个别题目的答案。</li>
+<li>预判文章内容。题干信息通常与原文写作信息保持一致，只要我们串读题干，则能大致把握文章的基本走向和写作思路，对文章内容进行预判。</li>
+</ol>
+</blockquote>
+<h2 id="PART3-阅读的灵魂——中心思想"><a href="#PART3-阅读的灵魂——中心思想" class="headerlink" title="PART3 阅读的灵魂——中心思想"></a>PART3 阅读的灵魂——中心思想</h2><p>中心思想是必考项目之一。下面介绍三种快速准确把握中心思想的方法。</p>
+<h3 id="1-首尾句串读法（最普适）"><a href="#1-首尾句串读法（最普适）" class="headerlink" title="1. 首尾句串读法（最普适）"></a>1. 首尾句串读法（最普适）</h3><p>与PART2介绍的方法是一样的，放在把握中心思想的用途也适用。</p>
+<h3 id="2-找中心词（最快最直观）"><a href="#2-找中心词（最快最直观）" class="headerlink" title="2. 找中心词（最快最直观）"></a>2. 找中心词（最快最直观）</h3><p>某一单词在文中反复出现，则它就是中心词。需要多多留意中心词和它改写后的中心词。</p>
+<blockquote>
+<p>中心词在选项中的特征<br>近年真题的选项中，中心词不再是原词重现，而是多以同义替换的形式出现。<br>一篇文章的中心词可能有多个，只有内容全面的选项才是最佳答案。干扰选项的特征可能只是其中一个中心词，而漏掉了其他中心词。</p>
+</blockquote>
+<h3 id="3-中心句（可根据形式判断）"><a href="#3-中心句（可根据形式判断）" class="headerlink" title="3. 中心句（可根据形式判断）"></a>3. 中心句（可根据形式判断）</h3><p>首先是中心句的定义：一般来说，1）独句成段；2）文首的问句和回答 都是中心句，请不要忽视。</p>
+<h4 id="材料库-1"><a href="#材料库-1" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
+<p>情态动词的逻辑<br>情态动词should,would,could,must,can,may,might之后往往代表的是作者的主观看法或愿望，自然就和作者的态度观点相关，进而与全文的中心思想相关。</p>
+</blockquote>
+<h2 id="PART4-阅读的方向——感情色彩"><a href="#PART4-阅读的方向——感情色彩" class="headerlink" title="PART4 阅读的方向——感情色彩"></a>PART4 阅读的方向——感情色彩</h2><p>一篇文章的中心主旨通常由两部分构成。1）关键词，也就是中心词；2）态度，这就意味着考生在阅读过程中应对作者的感情色彩用词进行标记。</p>
+<p>感情色彩分为三类：褒义（肯定），贬义（否定）、中性。<br>作者的观点态度也可以分为三类：积极、消极、客观。</p>
+<p>下面是寻找感情色彩的方法</p>
+<h3 id="1-首尾句串读法"><a href="#1-首尾句串读法" class="headerlink" title="1. 首尾句串读法"></a>1. 首尾句串读法</h3><p>三杀！中心即态度，态度即中心，所以找到中心就是找到了态度。</p>
+<h3 id="2-形容词-amp-副词"><a href="#2-形容词-amp-副词" class="headerlink" title="2. 形容词&amp;副词"></a>2. 形容词&amp;副词</h3><p>它们是带有感情色彩的词，所以应该多留意形容词和副词。</p>
+<p>还有一些名词和动词也具有感情色彩，需要额外留意。</p>
+<h3 id="3-转折后"><a href="#3-转折后" class="headerlink" title="3. 转折后"></a>3. 转折后</h3><p>文章作者通常都会将自己的观点和态度在转折之后表达出来。转折之后是重点。</p>
+<h3 id="4-情态动词之后"><a href="#4-情态动词之后" class="headerlink" title="4. 情态动词之后"></a>4. 情态动词之后</h3><h4 id="材料库-2"><a href="#材料库-2" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
+<p>情态动词的逻辑<br>情态动词should,would,could,must,can,may,might之后往往代表的是作者的主观看法或愿望，自然就和作者的态度观点相关，进而与全文的中心思想相关。</p>
+</blockquote>
+<h2 id="PART5-阅读的规律——行文特点"><a href="#PART5-阅读的规律——行文特点" class="headerlink" title="PART5 阅读的规律——行文特点"></a>PART5 阅读的规律——行文特点</h2><h3 id="1-时间对比原则"><a href="#1-时间对比原则" class="headerlink" title="1. 时间对比原则"></a>1. 时间对比原则</h3><p>时间对比指的是一篇文章的作者往往通过时间的对比来表现某一事物的前后差异和发展过程。在这个过程中，过去和现在所发生的事情往往体现出截然相反的状态和结果。重点关注“现在”的内容，它通常预示着一篇文章的中心主旨。</p>
+<p>“时间相反，一切相反”。</p>
+<h4 id="材料库-3"><a href="#材料库-3" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
+<p>used to,no longer,while,today,now。<br>used to 表示过去常常做某事，潜台词是现在不做了。<br>while作为连词表示当…时，考研阅读中更多表示对比“虽然，然而”的含义。</p>
+</blockquote>
+<h3 id="2-少数派原则"><a href="#2-少数派原则" class="headerlink" title="2. 少数派原则"></a>2. 少数派原则</h3><p>考研中作者的观点和态度通常是标新立异的，如果是大众熟知的就没必要在写文章了。一般大多数人都认为的，作者的观点就是与其相反的。</p>
+<p>一般还会设置一个与“少数派”相反的观点，用“常识性”的选项来误导学生。</p>
+<h4 id="材料库-4"><a href="#材料库-4" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
+<p>表示少数的：few,little,seldom,rarely,scarcely…</p>
+</blockquote>
+<h3 id="3-不同单词、表达指代同一事物"><a href="#3-不同单词、表达指代同一事物" class="headerlink" title="3. 不同单词、表达指代同一事物"></a>3. 不同单词、表达指代同一事物</h3><h4 id="材料库-5"><a href="#材料库-5" class="headerlink" title="材料库"></a>材料库</h4><blockquote>
+<p>this,that,these,those,such,the…</p>
+</blockquote>
+<p>特别注重“指代”这一逻辑阅读法，通常文章反复改写的就是全文的关键词。</p>
+<h2 id="PART6-阅读的题型——有技可循"><a href="#PART6-阅读的题型——有技可循" class="headerlink" title="PART6 阅读的题型——有技可循"></a>PART6 阅读的题型——有<em>技</em>可循</h2><p>从PART2-PART5，已经给了不少方法论，现在将这些方法论对应到各题型中，使得做题可以对症下药。</p>
+<p>通过考试大纲，总结出八种题型/能力考查点：</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210301231111.png" width="100%" height="50%"></center>
+
+<h3 id="1-主旨题"><a href="#1-主旨题" class="headerlink" title="1. 主旨题"></a>1. 主旨题</h3><blockquote>
+<p>常见的题干信息词有：main idea,mainly talk about,mainly discuss,the best title/subject…</p>
+<p>方法论：对应第二章的三个方法：首尾句串读法、中心词法、中心句法。</p>
+</blockquote>
+<h3 id="2-细节题"><a href="#2-细节题" class="headerlink" title="2. 细节题"></a>2. 细节题</h3><p>细节题的数量是最多的，形式也是最多的。</p>
+<blockquote>
+<p>常见的问法：是什么？为什么？怎么样？</p>
+<p>方法论：定位题干信息。题干信息在原文有可能以原词的形式出现，也有可能进行某种程度上的改写。通常情况下，细节题定位到的地方（一般不超过三句话的范围）就会出现它对应的答案。</p>
+<p>细节题常见的干扰项有以下几种：1）细节信息的拼凑；2）常识干扰；3）反向干扰；4）用文中其他部分的信息进行无关干扰。</p>
+</blockquote>
+<h3 id="3-例证题"><a href="#3-例证题" class="headerlink" title="3. 例证题"></a>3. 例证题</h3><p>例证题对应八种能力中的第八条：区分论点和论据。</p>
+<blockquote>
+<p>常见的题干信息词有：example,case,demonstrate,illustrate,cite,quote,show等表达。</p>
+</blockquote>
+<p>对于例证题，解题思路只有一个原则，就是例子支撑的永远是观点，也就是说，只有找到观点才能找到正确答案。</p>
+<blockquote>
+<p>一般来说，观点都出现在例子的前面。观点经常也是全文的主旨，所以找到主旨也能反向推出例证题的答案。</p>
+<p>例证题最常见的干扰项就是讨论例子本身，就事论事。阅读选项时一定要尽量<strong>绕开直接谈论例子的选项</strong>。</p>
+</blockquote>
+<h3 id="4-态度题"><a href="#4-态度题" class="headerlink" title="4. 态度题"></a>4. 态度题</h3><blockquote>
+<p>常见的题干信息词有attitude,seem,tone,deem,consider，以及选项中出现有关态度的词positive,negative等。</p>
+<p>方法论：见第三章的三个方法：首尾句串读法、形容词与副词、转折、情态动词。</p>
+<p>小墓碑选项：一直扮演着干扰选项的作用<br>1.不感兴趣类：uninterested,unconcerned,indifferent<br>2.不知所措类：confused,puzzled<br>3.主观偏激类：subjective,biased,prejudice,contemptuous</p>
+</blockquote>
+<p>遇到小墓碑选项，直接pass。</p>
+<h3 id="5-词汇-句子理解题"><a href="#5-词汇-句子理解题" class="headerlink" title="5. 词汇/句子理解题"></a>5. 词汇/句子理解题</h3><p>这个题型考查根据上下文推测生词词义的能力。</p>
+<blockquote>
+<p>题干信息通常非常明显，所考的词汇和句子会用引号引出来，题干会给出词句所在的具体位置，且原文大多会做下划线处理。</p>
+<p>方法论：摸清上下文的逻辑关系，即第一章的方法论。如果是相反的逻辑，则选反义词；否则选近义词。</p>
+<p>避免<strong>望文生义</strong>，即设置的干扰信息是用所考词或句本身字面含义进行干扰。还有一种干扰方式是所考词非常简单，但考熟词僻义，干扰选项弧设置成它较为常见的含义。</p>
+</blockquote>
+<h3 id="6-推理题"><a href="#6-推理题" class="headerlink" title="6. 推理题"></a>6. 推理题</h3><blockquote>
+<p>常见题干信息有：infer,imply,suggest,learn from…</p>
+<p>推理题不应该进行推理，因为答案必然出自原文，且与原文内容保持一致。不应该进行主观推测。</p>
+</blockquote>
+<p>通常答案有以下几个特征：</p>
+<blockquote>
+<p>1.答案就是对原文某个细节信息的改写，这种情况做起来跟细节题是一致的。<br>2.答案是对某一段落信息的总结，也就是对局部主旨的考查。这种情况下，考生应重点关注文中重复出现的信息。<br>3.<strong>转折处常常作为正确答案的命题点！</strong><br>4.<strong>选项中出现委婉表达(may,might,not necessarily)时有很大概率是正确答案！</strong></p>
+</blockquote>
+<h2 id="PART7-万法归一"><a href="#PART7-万法归一" class="headerlink" title="PART7 万法归一"></a>PART7 万法归一</h2><p>待续。</p>
+]]></content>
+      <categories>
+        <category>英语</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
+        <tag>英语</tag>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手刃机器学习（1）——SVM</title>
+    <url>/2021/02/27/0227-ml-svm/</url>
+    <content><![CDATA[<p>容我鸽一下！</p>
+]]></content>
+      <categories>
+        <category>机器学习</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>分类模型</tag>
       </tags>
   </entry>
   <entry>
