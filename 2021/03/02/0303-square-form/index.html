@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="《李焕英》、《唐探3》用户评论分析, blog">
+    <meta name="keywords" content="线性代数基础系列（6）——二次型, blog">
     <meta name="description" content="个人博客/机器学习/数据挖掘/考研准备与分享">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>《李焕英》、《唐探3》用户评论分析 | SzUp</title>
+    <title>线性代数基础系列（6）——二次型 | SzUp</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -418,12 +418,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">《李焕英》、《唐探3》用户评论分析</h1>
+                    <h1 class="description center-align post-title">线性代数基础系列（6）——二次型</h1>
                 </div>
             </div>
         </div>
@@ -539,12 +539,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">
-                                <span class="chip bg-color">数据分析</span>
+                            <a href="/tags/%E8%80%83%E7%A0%94/">
+                                <span class="chip bg-color">考研</span>
                             </a>
                         
-                            <a href="/tags/%E7%88%AC%E8%99%AB/">
-                                <span class="chip bg-color">爬虫</span>
+                            <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                                <span class="chip bg-color">线性代数</span>
                             </a>
                         
                     </div>
@@ -555,8 +555,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="post-category">
-                                数据分析
+                            <a href="/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" class="post-category">
+                                线性代数
                             </a>
                         
                     </div>
@@ -568,21 +568,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-24
+                    2021-03-02
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-02-25
+                    2021-03-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.7k
                 </div>
                 
 
@@ -609,138 +609,199 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>声明：爬取数据仅供学习用途</strong></p>
-<p>最近看了两部电影，就是最近讨论度很高的两部，《你好，李焕英》和《唐人街探案3》。个人拙见，《你好，李焕英》虽好，但过誉；《唐探3》虽差，但没那么不堪。群众的眼睛是雪亮的，所以，接下来的工作是分析用户的评论。</p>
-<h2 id="1-数据准备"><a href="#1-数据准备" class="headerlink" title="1.数据准备"></a>1.数据准备</h2><p>数据来自某瓣，自己爬取。</p>
-<p>使用<strong>selenium库</strong>进行爬虫。</p>
-<pre><code>import pandas as pd
-from selenium import webdriver
-from selenium.webdriver.support.wait import WebDriverWait  # 等待页面加载某些元素
-from selenium.webdriver.chrome.options import Options
-from fake_useragent import UserAgent
-import random
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+                <p>最后一章啦！这一章的内容和前面既独立也不独立，难度还可以。</p>
+<h2 id="1-二次型"><a href="#1-二次型" class="headerlink" title="1. 二次型"></a>1. 二次型</h2><h3 id="1-1-二次型的定义"><a href="#1-1-二次型的定义" class="headerlink" title="1.1 二次型的定义"></a>1.1 二次型的定义</h3><p>二次型（quadratic form）：n个变量的二次多项式称为二次型，即在一个多项式中，未知数的个数为任意多个，但每一项的次数都为2的多项式。（来自度娘）</p>
+<p>举个例子…</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304095049.png" width="50%" height="50%"></center>
 
-if __name__ == '__main__':
-    count = 0
-    df = pd.DataFrame()
-    for j in range(10):
-        proxy_list = get_proxy() #动态ip
-        PROXY = '--proxy-server={0}'.format(random.choice(proxy_list))
-        print(PROXY)
+<p>就是未知数的次幂始终是2，这就是二次型。</p>
+<p><strong>通过矩阵来研究二次函数（方程），这就是线性代数中二次型的重点。</strong></p>
+<p>较为官方的定义：</p>
+<p>因为二次函数（方程）的二次部分最重要，为了方便研究，我们把含有 <img src="https://www.zhihu.com/equation?tex=n" alt=""> 个变量的二次齐次函数：</p>
+<p><img src="https://www.zhihu.com/equation?tex=f%28x_1%2Cx_2%2C%5Ccdot+%2Cx_+n%29%3Da_%7B11%7Dx_1%5E2%2Ba_%7B22%7Dx_2%5E2%2B%5Ccdots+%2Ba_%7Bnn%7Dx_+n%5E2%2B2a_%7B12%7Dx_1x_2%2B2a_%7B13%7Dx_1x_3%2B%5Ccdots+%2B2a_%7Bn-1%2Cn%7Dx_%7Bn-1%7Dx_+n" alt=""></p>
+<p>称为二次型。</p>
+<h3 id="1-2-二次型的矩阵表示"><a href="#1-2-二次型的矩阵表示" class="headerlink" title="1.2 二次型的矩阵表示"></a>1.2 二次型的矩阵表示</h3><p>我们可以通过矩阵来表示二次型：</p>
+<p><img src="https://pic2.zhimg.com/v2-4d6cde544f1a74ccc2daf11c660b8329_r.jpg?source=1940ef5c" alt=""></p>
+<p>更一般的：</p>
+<p><img src="https://pic1.zhimg.com/v2-4a33c2cbffece10d7a2543a834f3435e_r.jpg?source=1940ef5c" alt=""></p>
+<p>可以写成更线代的形式：</p>
+<p><img src="https://pic1.zhimg.com/v2-c01c1093c49427fca20446d42379be74_r.jpg?source=1940ef5c" alt=""></p>
+<p>所以有下面一一对应的关系：</p>
+<p><img src="https://pic2.zhimg.com/v2-c16658bfad849f41c7cf3622fc03294f_r.jpg?source=1940ef5c" alt=""></p>
+<p>在线代里面，就是通过一个<strong>对称矩阵</strong>，去研究某个二次型。</p>
+<h3 id="1-3-二次型的秩"><a href="#1-3-二次型的秩" class="headerlink" title="1.3 二次型的秩"></a>1.3 二次型的秩</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304100158.png" width="50%" height="50%"></center>
 
-        chrome_options = webdriver.ChromeOptions()
-        # 增加无头
-        chrome_options.add_argument('--headless')
-        chrome_options.add_argument('--disable-gpu')
-        # 防止被网站识别
-        chrome_options.add_experimental_option('excludeSwitches', ['enable-automation'])
-        desired_capabilities = chrome_options.to_capabilities()
+<p>对称矩阵A的秩就是二次型的秩。</p>
+<h2 id="2-标准型"><a href="#2-标准型" class="headerlink" title="2. 标准型"></a>2. 标准型</h2><h3 id="2-1-定义"><a href="#2-1-定义" class="headerlink" title="2.1 定义"></a>2.1 定义</h3><p>一个只含有平方项的二次型称为标准形。就是二次型中的一种特殊情况。</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304100758.png" width="50%" height="50%"></center>
 
-        desired_capabilities['proxy'] = {
-            "httpProxy": PROXY,
-            "noProxy": None,
-            "proxyType": "MANUAL",
-            "class": "org.openqa.selenium.Proxy",
-            "autodetect": False
-        }
+<p>例如上面这个式子…我们就可以称它是标准型。至于为什么出现了对角矩阵…待会揭秘！</p>
+<h3 id="2-2-标准型的几何含义"><a href="#2-2-标准型的几何含义" class="headerlink" title="2.2 标准型的几何含义"></a>2.2 标准型的几何含义</h3><p><strong>标准的二次方程在直角坐标系下的图像</strong></p>
+<p>如果坐标系是一个直角坐标系，相信大家都知道标准方程的图像:</p>
+<p><img src="https://pic1.zhimg.com/v2-d09b42efe93c2e584518d0a3e1fed16c_b.gif" alt=""><br><img src="https://pic4.zhimg.com/v2-65349f1825fb7994a3a8851d3ddcee93_b.gif" alt=""></p>
+<h3 id="2-3-为什么需要标准型"><a href="#2-3-为什么需要标准型" class="headerlink" title="2.3 为什么需要标准型"></a>2.3 为什么需要标准型</h3><ul>
+<li>首先，一个标准的二次方程的图像是容易知道的；</li>
+<li>其次，利用非退化的线性替换可以将一个未知图像的放到一个坐标系（线性替换矩阵）中，使得图像的方程变成标准形；</li>
+<li>最后，利用这个方程的标准形的图像便可以得到了原方程的图像。</li>
+</ul>
+<h2 id="3-规范型"><a href="#3-规范型" class="headerlink" title="3. 规范型"></a>3. 规范型</h2><h3 id="3-1-定义"><a href="#3-1-定义" class="headerlink" title="3.1 定义"></a>3.1 定义</h3><p>在标准型的基础上，系数只有+1或-1的标准型称作规范形。</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304122720.png" width="50%" height="50%"></center>
 
-        driver = webdriver.Chrome(desired_capabilities=desired_capabilities)
-        print("https://movie.douban.com/subject/27619748/comments?start={}&amp;limit=20&amp;status=P&amp;sort=new_score".format(
-            (j + 1) * 20))
-        driver.get("https://movie.douban.com/subject/27619748/comments?start={}&amp;limit=20&amp;status=P&amp;sort=new_score".format((j+1)*20))
+<h3 id="3-2-二次型、标准型、规范型的转换"><a href="#3-2-二次型、标准型、规范型的转换" class="headerlink" title="3.2 二次型、标准型、规范型的转换"></a>3.2 二次型、标准型、规范型的转换</h3><h4 id="3-2-1-二次型to标准型"><a href="#3-2-1-二次型to标准型" class="headerlink" title="3.2.1 二次型to标准型"></a>3.2.1 二次型to标准型</h4><h5 id="法1-配方法"><a href="#法1-配方法" class="headerlink" title="法1.配方法"></a>法1.配方法</h5><p>例1.</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123219.png" width="50%" height="50%"></center>
 
-        for i in range(20):
-            comm = driver.find_elements_by_xpath(
-                    "//*[@id=\"comments\"]/div[{}]/div[2]/p/span".format(i+1))
-            date = driver.find_elements_by_xpath(
-                    "//*[@id=\"comments\"]/div[{}]/div[2]/h3/span[2]/span[3]".format(i+1))
-            useful = driver.find_elements_by_xpath(
-                    "//*[@id=\"comments\"]/div[{}]/div[2]/h3/span[1]/span".format(i+1))
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123234.png" width="50%" height="50%"></center>
 
-            df.loc[count,"comment"] = comm[0].text if len(comm)&gt;0 else "null"
-            df.loc[count, "date"] = date[0].text if len(date)&gt;0 else "null"
-            df.loc[count, "useful"] = useful[0].text if len(useful)&gt;0 else "null"
-            count += 1
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123242.png" width="50%" height="50%"></center>
 
-        print(df)
-    df.to_csv("tangtan3.csv",encoding='UTF-8')
-    driver.close()
-</code></pre><p>为了防止被封ip，可以去<strong>获取代理ip</strong>，并且一次获取多个，随机用。这样基本不会被反爬机制发现。</p>
-<p>其中我们使用的xpath语法也非常友好，在chrome浏览器中有个插件：</p>
-<center>
-<img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210224203242.png" width="50%" height="50%">
-</center>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123250.png" width="50%" height="50%"></center>
 
-<p>根据开发者工具，先定位好元素在哪，可以直接copy出xpath代码。把xpath代码放到插件中检查一下是否是你想要的元素，如果是的话，就可以写到代码中了。</p>
-<p>一共爬了三个属性，评论、日期、点赞数，星级评价暂时爬不下来…因为定位不着，挺迷的。还有日期和点赞数数据有点问题。</p>
-<h2 id="2-分析"><a href="#2-分析" class="headerlink" title="2.分析"></a>2.分析</h2><p>每部电影只爬取了200条评论，因为超过200条评论需要登录才能继续查看。不想再捣鼓cookies，就先做200条的分析。</p>
-<p>我们使用snownlp库对评论进行消极/积极情绪分析。即把评论映射到0-1的实数域上，它代表的意义是：<strong>积极情绪的概率</strong>，1代表积极情绪概率极高，0代表积极情绪概率极低，可以理解为消极概率极高。</p>
-<p>p.s. 英文文本可以使用textblob库分析。</p>
-<h3 id="2-0-代码实现"><a href="#2-0-代码实现" class="headerlink" title="2.0 代码实现"></a>2.0 代码实现</h3><p>底下是实现的代码。</p>
-<pre><code>import pandas as pd
-from textblob import TextBlob
-from snownlp import SnowNLP
-import matplotlib.pyplot as plt
-import numpy as np
-import matplotlib
-import wordcloud
 
-plt.rcParams['font.sans-serif']=['SimHei'] #用来正常显示中文标签
-plt.rcParams['axes.unicode_minus'] = False #用来正常显示负号
+<p>例2.</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123633.png" width="50%" height="50%"></center>
 
-df = pd.read_csv("lihuanying.csv",index_col=0)
-data = []
-words = []
+<blockquote>
+<p>tips: 没有平方项的二次型，需要自己制造平方项。</p>
+</blockquote>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123659.png" width="50%" height="50%"></center>
 
-for i in range(len(df)) :
-    comment = df.loc[i,"comment"]
-    s = SnowNLP(comment)
-    p = s.sentiments
-    df.loc[i,"sentiment"] = p
-    data.append(p)
-    print(s.words)
-    w = list(set(s.words))
-    print(w)
-    for i in w[:]:
-        if len(i.encode('utf8'))&lt;=3:
-            w.remove(i)
-    words.extend(w)
-    print(w)
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123758.png" width="50%" height="50%"></center>
 
-print(words)
-w=wordcloud.WordCloud(width=1000,font_path="C:\\Windows\\Fonts\\STXIHEI.TTF",height=700)
-w.generate(" ".join(words))
-w.to_file("lihuanying.png")
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123812.png" width="50%" height="50%"></center>
 
-print(df)
-plt.hist(data, bins=10, normed=0, facecolor="blue", edgecolor="black", alpha=0.7)
-# 显示横轴标签
-plt.xlabel("积极情绪概率")
-# 显示纵轴标签
-plt.ylabel("频数")
-# 显示图标题
-plt.title("积极情绪概率分布直方图")
-plt.show()
-</code></pre><h3 id="2-1-《你好，李焕英》分析"><a href="#2-1-《你好，李焕英》分析" class="headerlink" title="2.1 《你好，李焕英》分析"></a>2.1 《你好，李焕英》分析</h3><p>首先自然就是直方图啦~</p>
-<center>
-<img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210224220503.png" width="50%" height="50%">
-</center>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123821.png" width="50%" height="50%"></center>
 
-<p>可以看到，1.0占比非常高。。说明观众对这个片子的评价还是很不错的。待会可以看一下唐探的评分，惨不忍睹呀。</p>
-<p>接下来看看李焕英这个电影评论的关键词分布：</p>
-<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210224224036.png" width="75%" height="75%"></center>
+<blockquote>
+<p>总结：先从x1开始，将带有x1项合并，凑出完全平方公式后；对x2实施同样的操作，直至所有的xn都变为平方项。最后把完全平方的项进行“换元”。</p>
+</blockquote>
+<p>注：最后一步x=cy请看第五章坐标变换。</p>
+<h5 id="法2-正交变换法（重要！！）"><a href="#法2-正交变换法（重要！！）" class="headerlink" title="法2.正交变换法（重要！！）"></a>法2.正交变换法（重要！！）</h5><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123833.png" width="50%" height="50%"></center>
 
-<p>负面词很少，基本都是赞美= =</p>
-<h3 id="2-2-《唐探3》分析"><a href="#2-2-《唐探3》分析" class="headerlink" title="2.2 《唐探3》分析"></a>2.2 《唐探3》分析</h3><p>emmm，我都不敢放图了，这还只爬了200条，情况就已经成这样子了。</p>
-<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210224224444.png" width="50%" height="50%"></center>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304123852.png" width="50%" height="50%"></center>
 
-<p>吊打局。而且消极评论占比还挺大，超过五分之一了。</p>
-<p>接下来看看评论的关键词分布：</p>
-<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210224224553.png" width="75%" height="75%"></center>
+<p>归为定理：</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304124158.png" width="50%" height="50%"></center>
 
-<p>除去那几个最大字号的，你可以看到。。一些比较消极的词= =</p>
-<h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h2><p>大概就是做个小project试试水啦，不过还是蛮好玩的。如果大家有什么好点子，欢迎私信我（doge）。</p>
+<p>由上，我们把问题归结为求解A矩阵的特征值与特征向量。</p>
+<p>例1</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304124248.png" width="50%" height="50%"></center>
+
+<p>求解特征值</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304124259.png" width="50%" height="50%"></center>
+
+<p>求解特征向量</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304124318.png" width="50%" height="50%"></center>
+
+<blockquote>
+<p>tips:实对称矩阵不同特征值的特征向量必正交。若特征值相同的情况，特征向量不一定正交。如果是正交的情况（内积为0），则不必做施密特正交化；如果特征向量不正交，则需要做施密特正交化。</p>
+</blockquote>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304124337.png" width="50%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304124345.png" width="50%" height="50%"></center>
+
+<p>单位化</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304124359.png" width="50%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304124412.png" width="50%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304124421.png" width="50%" height="50%"></center>
+
+
+<blockquote>
+<p>总结：</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304125336.png" width="100%" height="100%"></center>
+
+
+</blockquote>
+<h4 id="3-2-2-标准型to规范型"><a href="#3-2-2-标准型to规范型" class="headerlink" title="3.2.2 标准型to规范型"></a>3.2.2 标准型to规范型</h4><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304125600.png" width="50%" height="50%"></center>
+
+<p>例题</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304125618.png" width="50%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304125627.png" width="50%" height="50%"></center>
+
+<blockquote>
+<p>凑出系数即可。</p>
+</blockquote>
+<h2 id="4-惯性指数与惯性定理"><a href="#4-惯性指数与惯性定理" class="headerlink" title="4. 惯性指数与惯性定理"></a>4. 惯性指数与惯性定理</h2><h3 id="4-1-惯性指数"><a href="#4-1-惯性指数" class="headerlink" title="4.1 惯性指数"></a>4.1 惯性指数</h3><p>惯性指数分为正惯性指数与负惯性指数。</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304125726.png" width="50%" height="50%"></center>
+
+<p>计算方式很容易，正惯性指数就是正系数个数，负惯性指数就是负系数个数，<strong>仅针对标准型而言</strong>。</p>
+<h3 id="4-2-惯性定理"><a href="#4-2-惯性定理" class="headerlink" title="4.2 惯性定理"></a>4.2 惯性定理</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304125805.png" width="50%" height="50%"></center>
+
+<p>用人话说，就是二次型经过不同的坐标变换，得到的系数可能不同，但惯性指数是确定的。即正的有几项，负的有几项，是唯一确定的。</p>
+<p>即，标准型可能不同，但规范型一定是唯一的。</p>
+<h4 id="几何角度理解惯性定理："><a href="#几何角度理解惯性定理：" class="headerlink" title="几何角度理解惯性定理："></a>几何角度理解惯性定理：</h4><p>例如，我们取了平面上一个中心在原点的一个椭圆<img src="https://www.zhihu.com/equation?tex=6x%5E2-6xy%2B6y%5E2-1%3D0" alt=""> 经过适当的线性替换, 这个椭圆一定可以化为<img src="https://www.zhihu.com/equation?tex=3u%5E2%2B9v%5E2%3D1" alt="">的形式</p>
+<p><img src="https://pic4.zhimg.com/v2-06db7756ac8fabdf6c98c4e212b127f3_b.gif" alt=""></p>
+<p>从而这个椭圆的规范形为<img src="https://www.zhihu.com/equation?tex=z%5E2%2Bw%5E2%3D1" alt="">。</p>
+<p>注意二次型的标准形不是唯一的，它与所选的坐标变换有关。由之前介绍的标准二次方程在一般坐标系下的图像可知，不论选取哪一个<img src="https://www.zhihu.com/equation?tex=uov" alt="">坐标系变为了标准形，椭圆的方程一定为 <img src="https://www.zhihu.com/equation?tex=au%5E2%2Bbv%5E2%3D1%5C%5C" alt=""> 其中<img src="https://www.zhihu.com/equation?tex=a%2Cb%3E0.+" alt=""> 这时候，再令坐标轴单位做一下伸缩变换，就可以使原图像的方程变为 <img src="https://www.zhihu.com/equation?tex=z%5E2%2Bw%5E2%3D1%5C%5C" alt=""></p>
+<p>也就说，一个椭圆的规范形是唯一的。</p>
+<h4 id="线性角度理解惯性定理："><a href="#线性角度理解惯性定理：" class="headerlink" title="线性角度理解惯性定理："></a>线性角度理解惯性定理：</h4><p>因为坐标系的替换也可以理解为一个线性变换。因此，每一个线性替换可以理解为将原来的二次曲线，通过线性替换矩阵所对应的线性变换，变为了一个新的二次曲线。下图为一个椭圆经过不同的线性变换后的图像：</p>
+<p><img src="https://pic2.zhimg.com/v2-20fe35aacc042c1596c66479fac73b25_b.gif" alt=""></p>
+<p>下图为一个双曲线经过不同的线性变换后的图像：</p>
+<p><img src="https://pic3.zhimg.com/v2-24d1ad8246397793eb56757e8201c782_b.gif" alt=""></p>
+<p>惯性定理，可以理解为任何一个椭圆 / 椭球 / 双曲线…. 在经过一个可逆的线性变换之后依然是一个椭圆 / 椭球 / 双曲线…。</p>
+<h2 id="5-坐标变换"><a href="#5-坐标变换" class="headerlink" title="5.坐标变换"></a>5.坐标变换</h2><h3 id="5-1-定义"><a href="#5-1-定义" class="headerlink" title="5.1 定义"></a>5.1 定义</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304125940.png" width="50%" height="50%"></center>
+
+<p><strong>前提：C矩阵可逆</strong></p>
+<h3 id="5-2-示例"><a href="#5-2-示例" class="headerlink" title="5.2 示例"></a>5.2 示例</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304130453.png" width="50%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304130521.png" width="50%" height="50%"></center>
+
+<h3 id="5-3-合同"><a href="#5-3-合同" class="headerlink" title="5.3 合同"></a>5.3 合同</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304130925.png" width="50%" height="50%"></center>
+
+<blockquote>
+<p>矩阵等价、矩阵相似、二次型合同比较</p>
+<ul>
+<li><p>矩阵等价：<script type="math/tex">PAQ=B</script>；同型矩阵而言；一般与初等变换有关；秩是矩阵等价的不变量，两同型矩阵相似的本质是秩相似；  </p>
+</li>
+<li><p>矩阵相似：<script type="math/tex">P^{-1}AP=B</script>；针对方阵而言；秩相等为必要条件；本质是二者有相等的不变因子；可看作是同一线性变换在不同基下的矩阵；矩阵相似必等价，但等价不一定相似；  </p>
+</li>
+<li><p>矩阵合同：<script type="math/tex">C^TAC=B</script>；针对方阵而言；秩相等为必要条件；本质是秩相等且正惯性指数相等，即标准型相同；可通过二次型的非退化的线性替换来理解；矩阵合同必等价，但等价不一定合同。</p>
+</li>
+</ul>
+</blockquote>
+<h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304131446.png" width="50%" height="50%"></center>
+
+<h4 id="判定"><a href="#判定" class="headerlink" title="判定"></a>判定</h4><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304131508.png" width="50%" height="50%"></center>
+
+<p>根据这个规则，可以判断矩阵是否合同。</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304131630.png" width="50%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304131641.png" width="50%" height="50%"></center>
+
+
+<h2 id="6-正定二次型"><a href="#6-正定二次型" class="headerlink" title="6. 正定二次型"></a>6. 正定二次型</h2><h3 id="6-1-定义"><a href="#6-1-定义" class="headerlink" title="6.1 定义"></a>6.1 定义</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304131804.png" width="50%" height="50%"></center>
+
+<p>从图像上看，这是正定：</p>
+<p><img src="https://pic4.zhimg.com/v2-ebdfb7c7510ac85a582d6e79c1ef37b3_r.jpg?source=1940ef5c" alt=""></p>
+<h3 id="6-2-定理"><a href="#6-2-定理" class="headerlink" title="6.2 定理"></a>6.2 定理</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132016.png" width="50%" height="50%"></center>
+
+<h3 id="6-3-判定"><a href="#6-3-判定" class="headerlink" title="6.3 判定"></a>6.3 判定</h3><h4 id="法1：转换为标准型，通过等价条件"><a href="#法1：转换为标准型，通过等价条件" class="headerlink" title="法1：转换为标准型，通过等价条件"></a>法1：转换为标准型，通过等价条件</h4><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132200.png" width="50%" height="50%"></center>
+
+<h4 id="法2：通过必要条件"><a href="#法2：通过必要条件" class="headerlink" title="法2：通过必要条件"></a>法2：通过必要条件</h4><p>对角线上元素都要大于0。</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132238.png" width="50%" height="50%"></center>
+
+<h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h4><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132337.png" width="50%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132349.png" width="50%" height="50%"></center>
+
+<blockquote>
+<p>顺序主子式：方阵的k阶顺序主子式是由该方阵的前k行和k列元素组成。</p>
+</blockquote>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132500.png" width="50%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132516.png" width="50%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132525.png" width="50%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132533.png" width="50%" height="50%"></center>
+
+<h2 id="7-总结"><a href="#7-总结" class="headerlink" title="7. 总结"></a>7. 总结</h2><p>（待续）</p>
+<h4 id="部分内容转自："><a href="#部分内容转自：" class="headerlink" title="部分内容转自："></a>部分内容转自：</h4><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38902714/answer/195435181">https://www.zhihu.com/question/38902714/answer/195435181</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/141824840">https://zhuanlan.zhihu.com/p/141824840</a></p>
+<p>李永乐老师的线代教程</p>
+<p><strong>感谢！</strong></p>
 
                 
             </div>
@@ -767,7 +828,7 @@ plt.show()
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://coding-pages-bucket-3524585-8350222-12967-499213-1304986771.cos-website.ap-hongkong.myqcloud.com/2021/02/24/0224-movie-analysis/">https://coding-pages-bucket-3524585-8350222-12967-499213-1304986771.cos-website.ap-hongkong.myqcloud.com/2021/02/24/0224-movie-analysis/</a>
+                    <a href="https://coding-pages-bucket-3524585-8350222-12967-499213-1304986771.cos-website.ap-hongkong.myqcloud.com/2021/03/02/0303-square-form/">https://coding-pages-bucket-3524585-8350222-12967-499213-1304986771.cos-website.ap-hongkong.myqcloud.com/2021/03/02/0303-square-form/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -805,12 +866,12 @@ plt.show()
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">
-                                    <span class="chip bg-color">数据分析</span>
+                                <a href="/tags/%E8%80%83%E7%A0%94/">
+                                    <span class="chip bg-color">考研</span>
                                 </a>
                             
-                                <a href="/tags/%E7%88%AC%E8%99%AB/">
-                                    <span class="chip bg-color">爬虫</span>
+                                <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                                    <span class="chip bg-color">线性代数</span>
                                 </a>
                             
                         </div>
@@ -1121,13 +1182,13 @@ plt.show()
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/02/25/0223-vector/">
+                <a href="/2021/03/02/0302-eigenval-eigenvec/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="线性代数基础系列（4）——向量">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="线性代数基础系列（5）——特征值与特征向量">
                         
-                        <span class="card-title">线性代数基础系列（4）——向量</span>
+                        <span class="card-title">线性代数基础系列（5）——特征值与特征向量</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1138,7 +1199,7 @@ plt.show()
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-25
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-02
                         </span>
                         <span class="publish-author">
                             
@@ -1174,13 +1235,13 @@ plt.show()
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/21/0221-hexo-yi-zhi/">
+                <a href="/2021/03/01/0301-reading-skills/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Hexo移植">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="《阅读的逻辑》读后总结">
                         
-                        <span class="card-title">Hexo移植</span>
+                        <span class="card-title">《阅读的逻辑》读后总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1191,14 +1252,14 @@ plt.show()
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/categories/%E8%8B%B1%E8%AF%AD/" class="post-category">
+                                    英语
                                 </a>
                             
                             
@@ -1208,12 +1269,16 @@ plt.show()
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/%E8%80%83%E7%A0%94/">
+                        <span class="chip bg-color">考研</span>
                     </a>
                     
-                    <a href="/tags/%E7%A7%BB%E6%A4%8D/">
-                        <span class="chip bg-color">移植</span>
+                    <a href="/tags/%E8%8B%B1%E8%AF%AD/">
+                        <span class="chip bg-color">英语</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%98%85%E8%AF%BB/">
+                        <span class="chip bg-color">阅读</span>
                     </a>
                     
                 </div>
@@ -1381,6 +1446,13 @@ plt.show()
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
