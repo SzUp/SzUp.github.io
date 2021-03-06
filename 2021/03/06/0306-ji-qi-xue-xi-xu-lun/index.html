@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="cheerup, blog">
+    <meta name="keywords" content="blog">
     <meta name="description" content="个人博客/机器学习/数据挖掘/考研准备与分享">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>cheerup | SzUp</title>
+    <title>SzUp</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -414,58 +414,400 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align diyFont">
-                
-                Never Compromise
-                
-            </div>
+    
 
-            <div class="description center-align">
-                
-                    <span id="jinrishici-sentence">正在加载今日诗词....</span>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
 
 
-    </div>
-</div>
+<main class="post-container content">
 
-<main class="content">
-    <div id="contact" class="container chip-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="tag-title center-align">
-                    <i class="fas fa-comments"></i>&nbsp;&nbsp;今天你打卡了吗
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-03-06
                 </div>
                 
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-03-06
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    835
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    2 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
-        <div class="card">
-            
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h2><h3 id="机器学习是什么？"><a href="#机器学习是什么？" class="headerlink" title="机器学习是什么？"></a>机器学习是什么？</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210306194452.png" width="100%" height="50%"></center>
+
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210306194536.png" width="50%" height="50%"></center>
+
+<p>接地气的说，人通过学习知识，能够对事情具有判断能力。<br>而机器也可以学习知识，从而对事情具有判断能力。</p>
+<p>机器的知识是人提供的数据。<br>通过对数据的学习，从而训练出某种能力。<br>我们把给出这种能力的玩意叫模型。</p>
+<h2 id="2-基本术语"><a href="#2-基本术语" class="headerlink" title="2. 基本术语"></a>2. 基本术语</h2><p>假设我们现在要让机器一个任务，让它判断这个西瓜是否是个好瓜。<br>则我们需要给它数据进行学习，这个过程叫训练。</p>
+<p>既然要判断好瓜，则我们应该给它西瓜的数据，并标注好哪个是好瓜，哪个是坏瓜。<br>试想一下，让一个不懂事的小朋友去挑，你是不是也得告诉他好瓜具有什么特征？机器也是这样。</p>
+<ul>
+<li><p>训练数据集</p>
+<ul>
+<li>100个西瓜</li>
+</ul>
+</li>
+<li><p>特征</p>
+<ul>
+<li>颜色（绿，红，青绿…）</li>
+<li>根蒂（长，短….）</li>
+<li>敲声（大，小…）</li>
+<li>…..</li>
+</ul>
+</li>
+<li><p>标签</p>
+<ul>
+<li>好瓜还是坏瓜</li>
+</ul>
+</li>
+</ul>
+<p>有了一些西瓜，以及特征，与标签，我们现在就可以让机器去学习如何判断好瓜或者是坏瓜了。</p>
+<ul>
+<li><p>基本任务</p>
+<ul>
+<li><p>分类（标签是离散型）</p>
+<p>  好瓜与坏瓜 → 二分类问题</p>
+<p>  小瓜中瓜大瓜 → 多分类问题</p>
+</li>
+<li><p>回归（标签是连续型）</p>
+<p>  能长多重</p>
+</li>
+</ul>
+</li>
+<li><p>任务类别</p>
+<ul>
+<li><p>有监督学习</p>
+<p>  例如分类好瓜还是坏瓜，给了一些特征，计算机还是不能明白谁是好的，谁是坏的。因为它根本就没见过西瓜….所以，给了特征后，还要给它谁是好瓜，谁是坏瓜，这样特征与标签之间能够建立起联系，从而能够训练出模型来，去分类谁是好瓜谁是坏瓜。</p>
+<p>  分类和回归都是有监督学习。</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210306193952.png" width="100%" height="50%"></center>
+</li>
+<li><p>无监督学习</p>
+<p>  <strong>核心思想：物以类聚，人以群分。</strong>这是先辈赐予我们的智慧，与先验知识。在计算机中，我们认为距离相近的为一类，而距离使用的是欧氏距离等来度量。</p>
+<p>  代表算法就是Kmeans。</p>
+<p>  无监督学习不需要标签，而是使用距离，自动归类。也是个分类任务。</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>进行预测</p>
+<ul>
+<li>测试</li>
+<li>测试样本</li>
+<li><p>泛化能力</p>
+  <center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210306200533.png" width="100%" height="50%"></center>
+
+<p>  简单来说，有些学霸不怕考试，对于新遇到的题也总是能做对，这就是泛化能力强的表现。</p>
+<p>  增加训练集的样本数，可以增强泛化能力。<del>（题海战术，不就是这个意思吗….）</del></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-假设空间"><a href="#3-假设空间" class="headerlink" title="3. 假设空间"></a>3. 假设空间</h2><h3 id="科学推理的手段"><a href="#科学推理的手段" class="headerlink" title="科学推理的手段"></a>科学推理的手段</h3><ul>
+<li><p>归纳：特殊到一般</p>
+<ul>
+<li><p>狭义</p>
+<ul>
+<li><p>从训练数据中得到概念</p>
+<ul>
+<li>布尔概念：是或不是</li>
+<li><p>假设就是各种情况</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210306201101.png" width="100%" height="50%"></center>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>广义</p>
+<ul>
+<li>从样本中学习</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>演绎：一般到特殊</p>
+</li>
+</ul>
+<h2 id="4-归纳偏好"><a href="#4-归纳偏好" class="headerlink" title="4. 归纳偏好"></a>4. 归纳偏好</h2><p>同一个数据集训练出了不同的模型，如何选择模型？</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210306201533.png" width="50%" height="50%"></center>
+
+<h3 id="原则"><a href="#原则" class="headerlink" title="原则"></a>原则</h3><ul>
+<li><p>奥卡姆剃刀</p>
+<ul>
+<li><p>选最简单的那个</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210306202006.png" width="50%" height="50%"></center>
+</li>
+<li><p>也有其他的理解</p>
+<p>因为简单的标准可能不唯一。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="NFL定理"><a href="#NFL定理" class="headerlink" title="NFL定理"></a>NFL定理</h3><p>No Free Lunch Theorem.没有免费的午餐。</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210306202303.png" width="50%" height="50%"></center>
+
+
+<h2 id="5-发展历程"><a href="#5-发展历程" class="headerlink" title="5. 发展历程"></a>5. 发展历程</h2><p>太多了</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210306202908.png" width="50%" height="100%"></center>
+
+<p>耐心的读者自己去读 <del>我反正是没耐心</del></p>
+<p>反正就是一种程序，有自我改善的能力，人为干预越少越好</p>
+<h2 id="6-总结"><a href="#6-总结" class="headerlink" title="6. 总结"></a>6. 总结</h2><p>这一章就是划划水，介绍</p>
+
+                
+            </div>
+            <hr/>
 
             
 
-            
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">SzUp</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://coding-pages-bucket-3524585-8350222-12967-499213-1304986771.cos-website.ap-hongkong.myqcloud.com/2021/03/06/0306-ji-qi-xue-xi-xu-lun/">https://coding-pages-bucket-3524585-8350222-12967-499213-1304986771.cos-website.ap-hongkong.myqcloud.com/2021/03/06/0306-ji-qi-xue-xi-xu-lun/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">SzUp</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
 
-            
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
 
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
             
-            <style>
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
     .valine-card {
         margin: 1.5rem auto;
     }
@@ -727,15 +1069,275 @@
     });
 </script>
 
-            
-			
-			
+    
 
-            
+    
 
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/03/06/0306-ji-qi-xue-xi-xu-lun/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            SzUp
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/03/06/0306-person-separation/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="行人重识别">
+                        
+                        <span class="card-title">行人重识别</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/" class="post-category">
+                                    计算机视觉
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">
+                        <span class="chip bg-color">计算机视觉</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: SzUp<br />'
+            + '文章作者: SzUp<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
         </div>
     </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
 </main>
+
+
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
 
 
     <footer class="page-footer bg-color">
