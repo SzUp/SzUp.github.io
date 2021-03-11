@@ -578,7 +578,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    505
+                    475
                 </div>
                 
 
@@ -647,57 +647,42 @@
 <center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/IMG_2786.PNG" width="100%" height="50%"></center>
 
 <h1 id="3-部署应用"><a href="#3-部署应用" class="headerlink" title="3 部署应用"></a>3 部署应用</h1><h2 id="3-1-部署hexo博客"><a href="#3-1-部署hexo博客" class="headerlink" title="3.1 部署hexo博客"></a>3.1 部署hexo博客</h2><h3 id="3-1-1-安装nodejs和npm"><a href="#3-1-1-安装nodejs和npm" class="headerlink" title="3.1.1 安装nodejs和npm"></a>3.1.1 安装nodejs和npm</h3><ul>
-<li>1、先在系统上安装好nodejs和npm<br>```<br>sudo    apt-get    install    nodejs-legacy</li>
+<li>1、先在系统上安装好nodejs和npm<pre><code>sudo    apt-get    install    nodejs-legacy
+</code></pre></li>
 </ul>
-<p>sudo    apt-get    install    npm</p>
-<pre><code>- 2、安装用于安装nodejs的模块n
-</code></pre><p>sudo    npm    install    -g    n</p>
-<pre><code>
-- 3、通过n模块安装指定的nodejs
-</code></pre><p>sudo    n    latest</p>
-<p>sudo    n    stable</p>
-<p>sudo    n    lts</p>
-<pre><code>
-- 4、升级npm为最新版本
-</code></pre><p>sudo    npm    install    npm@latest    -g</p>
-<pre><code>- 5、查看版本
-</code></pre><p>sudo    node    -v</p>
-<p>sudo    npm    -v</p>
-<pre><code>
-### 3.1.2 配置nginx
-</code></pre><p>yum install -y nginx</p>
-<pre><code>
-这个时候输入公网ip访问，会有nginx的default page
+<pre><code>sudo    apt-get    install    npm
+</code></pre><ul>
+<li>2、安装用于安装nodejs的模块n</li>
+</ul>
+<pre><code>sudo    npm    install    -g    n
+</code></pre><ul>
+<li>3、通过n模块安装指定的nodejs</li>
+</ul>
+<pre><code>sudo    n    latest
+</code></pre><pre><code>sudo    n    stable
+</code></pre><pre><code>sudo    n    lts
+</code></pre><ul>
+<li>4、升级npm为最新版本<pre><code>sudo    npm    install    npm@latest    -g
+</code></pre></li>
+<li>5、查看版本</li>
+</ul>
+<pre><code>sudo    node    -v
+</code></pre><pre><code>sudo    npm    -v
+</code></pre><h3 id="3-1-2-配置nginx"><a href="#3-1-2-配置nginx" class="headerlink" title="3.1.2 配置nginx"></a>3.1.2 配置nginx</h3><pre><code>yum install -y nginx
+</code></pre><p>这个时候输入公网ip访问，会有nginx的default page</p>
+<h3 id="3-1-3-配置git"><a href="#3-1-3-配置git" class="headerlink" title="3.1.3 配置git"></a>3.1.3 配置git</h3><p>通过uwsgi启动django时，django的ini文件中的socket需要加入http-，否则使用不了socket传送数据！</p>
+<center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210311191730.png" width="50%" height="50%"></center>
 
-### 3.1.3 配置git
-
-
-
-
-
-通过uwsgi启动django时，django的ini文件中的socket需要加入http-，否则使用不了socket传送数据！
-
-&lt;center&gt; &lt;img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210311191730.png" width="50%" height="50%" /&gt;&lt;/center&gt;
-
-https://blog.csdn.net/yilovexing/article/details/82969103
-
-https://blog.csdn.net/weixin_42134789/article/details/88059262
-
-https://blog.csdn.net/qq_41590417/article/details/80509098?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_
-baidulandingword-0&amp;spm=1001.2101.3001.4242
-
-重启uwsgi
-</code></pre><p>sudo killall -9 uwsgi</p>
-<pre><code>
-
-</code></pre><p>uwsgi —ini xxxx.ini</p>
-<pre><code>
-这个ini文件在django的最高级目录下
-
-
-启动nginx
-</code></pre><p>nginx<br>```</p>
-
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/yilovexing/article/details/82969103">https://blog.csdn.net/yilovexing/article/details/82969103</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42134789/article/details/88059262">https://blog.csdn.net/weixin_42134789/article/details/88059262</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41590417/article/details/80509098?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_">https://blog.csdn.net/qq_41590417/article/details/80509098?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_</a><br>baidulandingword-0&amp;spm=1001.2101.3001.4242</p>
+<p>重启uwsgi</p>
+<pre><code>sudo killall -9 uwsgi
+</code></pre><pre><code>uwsgi --ini xxxx.ini
+</code></pre><p>这个ini文件在django的最高级目录下</p>
+<p>启动nginx</p>
+<pre><code>nginx
+</code></pre>
                 
             </div>
             <hr/>
@@ -1417,7 +1402,7 @@ baidulandingword-0&amp;spm=1001.2101.3001.4242
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">38.6k</span>&nbsp;字
+                class="white-color">38.5k</span>&nbsp;字
             
             
             
