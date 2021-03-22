@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>线性代数基础系列（6）——二次型 | SzUp</title>
+    <title>线性代数基础系列（6）——二次型 | 小苏同学</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -46,7 +46,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">SzUp</span>
+                    <span class="logo-span">小苏同学</span>
                 </a>
             </div>
             
@@ -228,7 +228,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">SzUp</div>
+        <div class="logo-name">小苏同学</div>
         <div class="logo-desc">
             
             个人博客/机器学习/数据挖掘/考研准备与分享
@@ -617,17 +617,17 @@
 <p>就是未知数的次幂始终是2，这就是二次型。</p>
 <p><strong>通过矩阵来研究二次函数（方程），这就是线性代数中二次型的重点。</strong></p>
 <p>较为官方的定义：</p>
-<p>因为二次函数（方程）的二次部分最重要，为了方便研究，我们把含有 <img src="https://www.zhihu.com/equation?tex=n" alt=""> 个变量的二次齐次函数：</p>
-<p><img src="https://www.zhihu.com/equation?tex=f%28x_1%2Cx_2%2C%5Ccdot+%2Cx_+n%29%3Da_%7B11%7Dx_1%5E2%2Ba_%7B22%7Dx_2%5E2%2B%5Ccdots+%2Ba_%7Bnn%7Dx_+n%5E2%2B2a_%7B12%7Dx_1x_2%2B2a_%7B13%7Dx_1x_3%2B%5Ccdots+%2B2a_%7Bn-1%2Cn%7Dx_%7Bn-1%7Dx_+n" alt=""></p>
+<p>因为二次函数（方程）的二次部分最重要，为了方便研究，我们把含有 <img src="https://www.zhihu.com/equation?tex=n" alt> 个变量的二次齐次函数：</p>
+<p><img src="https://www.zhihu.com/equation?tex=f%28x_1%2Cx_2%2C%5Ccdot+%2Cx_+n%29%3Da_%7B11%7Dx_1%5E2%2Ba_%7B22%7Dx_2%5E2%2B%5Ccdots+%2Ba_%7Bnn%7Dx_+n%5E2%2B2a_%7B12%7Dx_1x_2%2B2a_%7B13%7Dx_1x_3%2B%5Ccdots+%2B2a_%7Bn-1%2Cn%7Dx_%7Bn-1%7Dx_+n" alt></p>
 <p>称为二次型。</p>
 <h3 id="1-2-二次型的矩阵表示"><a href="#1-2-二次型的矩阵表示" class="headerlink" title="1.2 二次型的矩阵表示"></a>1.2 二次型的矩阵表示</h3><p>我们可以通过矩阵来表示二次型：</p>
-<p><img src="https://pic2.zhimg.com/v2-4d6cde544f1a74ccc2daf11c660b8329_r.jpg?source=1940ef5c" alt=""></p>
+<p><img src="https://pic2.zhimg.com/v2-4d6cde544f1a74ccc2daf11c660b8329_r.jpg?source=1940ef5c" alt></p>
 <p>更一般的：</p>
-<p><img src="https://pic1.zhimg.com/v2-4a33c2cbffece10d7a2543a834f3435e_r.jpg?source=1940ef5c" alt=""></p>
+<p><img src="https://pic1.zhimg.com/v2-4a33c2cbffece10d7a2543a834f3435e_r.jpg?source=1940ef5c" alt></p>
 <p>可以写成更线代的形式：</p>
-<p><img src="https://pic1.zhimg.com/v2-c01c1093c49427fca20446d42379be74_r.jpg?source=1940ef5c" alt=""></p>
+<p><img src="https://pic1.zhimg.com/v2-c01c1093c49427fca20446d42379be74_r.jpg?source=1940ef5c" alt></p>
 <p>所以有下面一一对应的关系：</p>
-<p><img src="https://pic2.zhimg.com/v2-c16658bfad849f41c7cf3622fc03294f_r.jpg?source=1940ef5c" alt=""></p>
+<p><img src="https://pic2.zhimg.com/v2-c16658bfad849f41c7cf3622fc03294f_r.jpg?source=1940ef5c" alt></p>
 <p>在线代里面，就是通过一个<strong>对称矩阵</strong>，去研究某个二次型。</p>
 <h3 id="1-3-二次型的秩"><a href="#1-3-二次型的秩" class="headerlink" title="1.3 二次型的秩"></a>1.3 二次型的秩</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304100158.png" width="50%" height="50%"></center>
 
@@ -638,7 +638,7 @@
 <p>例如上面这个式子…我们就可以称它是标准型。至于为什么出现了对角矩阵…待会揭秘！</p>
 <h3 id="2-2-标准型的几何含义"><a href="#2-2-标准型的几何含义" class="headerlink" title="2.2 标准型的几何含义"></a>2.2 标准型的几何含义</h3><p><strong>标准的二次方程在直角坐标系下的图像</strong></p>
 <p>如果坐标系是一个直角坐标系，相信大家都知道标准方程的图像:</p>
-<p><img src="https://pic1.zhimg.com/v2-d09b42efe93c2e584518d0a3e1fed16c_b.gif" alt=""><br><img src="https://pic4.zhimg.com/v2-65349f1825fb7994a3a8851d3ddcee93_b.gif" alt=""></p>
+<p><img src="https://pic1.zhimg.com/v2-d09b42efe93c2e584518d0a3e1fed16c_b.gif" alt><br><img src="https://pic4.zhimg.com/v2-65349f1825fb7994a3a8851d3ddcee93_b.gif" alt></p>
 <h3 id="2-3-为什么需要标准型"><a href="#2-3-为什么需要标准型" class="headerlink" title="2.3 为什么需要标准型"></a>2.3 为什么需要标准型</h3><ul>
 <li>首先，一个标准的二次方程的图像是容易知道的；</li>
 <li>其次，利用非退化的线性替换可以将一个未知图像的放到一个坐标系（线性替换矩阵）中，使得图像的方程变成标准形；</li>
@@ -731,15 +731,15 @@
 
 <p>用人话说，就是二次型经过不同的坐标变换，得到的系数可能不同，但惯性指数是确定的。即正的有几项，负的有几项，是唯一确定的。</p>
 <p>即，标准型可能不同，但规范型一定是唯一的。</p>
-<h4 id="几何角度理解惯性定理："><a href="#几何角度理解惯性定理：" class="headerlink" title="几何角度理解惯性定理："></a>几何角度理解惯性定理：</h4><p>例如，我们取了平面上一个中心在原点的一个椭圆<img src="https://www.zhihu.com/equation?tex=6x%5E2-6xy%2B6y%5E2-1%3D0" alt=""> 经过适当的线性替换, 这个椭圆一定可以化为<img src="https://www.zhihu.com/equation?tex=3u%5E2%2B9v%5E2%3D1" alt="">的形式</p>
-<p><img src="https://pic4.zhimg.com/v2-06db7756ac8fabdf6c98c4e212b127f3_b.gif" alt=""></p>
-<p>从而这个椭圆的规范形为<img src="https://www.zhihu.com/equation?tex=z%5E2%2Bw%5E2%3D1" alt="">。</p>
-<p>注意二次型的标准形不是唯一的，它与所选的坐标变换有关。由之前介绍的标准二次方程在一般坐标系下的图像可知，不论选取哪一个<img src="https://www.zhihu.com/equation?tex=uov" alt="">坐标系变为了标准形，椭圆的方程一定为 <img src="https://www.zhihu.com/equation?tex=au%5E2%2Bbv%5E2%3D1%5C%5C" alt=""> 其中<img src="https://www.zhihu.com/equation?tex=a%2Cb%3E0.+" alt=""> 这时候，再令坐标轴单位做一下伸缩变换，就可以使原图像的方程变为 <img src="https://www.zhihu.com/equation?tex=z%5E2%2Bw%5E2%3D1%5C%5C" alt=""></p>
+<h4 id="几何角度理解惯性定理："><a href="#几何角度理解惯性定理：" class="headerlink" title="几何角度理解惯性定理："></a>几何角度理解惯性定理：</h4><p>例如，我们取了平面上一个中心在原点的一个椭圆<img src="https://www.zhihu.com/equation?tex=6x%5E2-6xy%2B6y%5E2-1%3D0" alt> 经过适当的线性替换, 这个椭圆一定可以化为<img src="https://www.zhihu.com/equation?tex=3u%5E2%2B9v%5E2%3D1" alt>的形式</p>
+<p><img src="https://pic4.zhimg.com/v2-06db7756ac8fabdf6c98c4e212b127f3_b.gif" alt></p>
+<p>从而这个椭圆的规范形为<img src="https://www.zhihu.com/equation?tex=z%5E2%2Bw%5E2%3D1" alt>。</p>
+<p>注意二次型的标准形不是唯一的，它与所选的坐标变换有关。由之前介绍的标准二次方程在一般坐标系下的图像可知，不论选取哪一个<img src="https://www.zhihu.com/equation?tex=uov" alt>坐标系变为了标准形，椭圆的方程一定为 <img src="https://www.zhihu.com/equation?tex=au%5E2%2Bbv%5E2%3D1%5C%5C" alt> 其中<img src="https://www.zhihu.com/equation?tex=a%2Cb%3E0.+" alt> 这时候，再令坐标轴单位做一下伸缩变换，就可以使原图像的方程变为 <img src="https://www.zhihu.com/equation?tex=z%5E2%2Bw%5E2%3D1%5C%5C" alt></p>
 <p>也就说，一个椭圆的规范形是唯一的。</p>
 <h4 id="线性角度理解惯性定理："><a href="#线性角度理解惯性定理：" class="headerlink" title="线性角度理解惯性定理："></a>线性角度理解惯性定理：</h4><p>因为坐标系的替换也可以理解为一个线性变换。因此，每一个线性替换可以理解为将原来的二次曲线，通过线性替换矩阵所对应的线性变换，变为了一个新的二次曲线。下图为一个椭圆经过不同的线性变换后的图像：</p>
-<p><img src="https://pic2.zhimg.com/v2-20fe35aacc042c1596c66479fac73b25_b.gif" alt=""></p>
+<p><img src="https://pic2.zhimg.com/v2-20fe35aacc042c1596c66479fac73b25_b.gif" alt></p>
 <p>下图为一个双曲线经过不同的线性变换后的图像：</p>
-<p><img src="https://pic3.zhimg.com/v2-24d1ad8246397793eb56757e8201c782_b.gif" alt=""></p>
+<p><img src="https://pic3.zhimg.com/v2-24d1ad8246397793eb56757e8201c782_b.gif" alt></p>
 <p>惯性定理，可以理解为任何一个椭圆 / 椭球 / 双曲线…. 在经过一个可逆的线性变换之后依然是一个椭圆 / 椭球 / 双曲线…。</p>
 <h2 id="5-坐标变换"><a href="#5-坐标变换" class="headerlink" title="5.坐标变换"></a>5.坐标变换</h2><h3 id="5-1-定义"><a href="#5-1-定义" class="headerlink" title="5.1 定义"></a>5.1 定义</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304125940.png" width="50%" height="50%"></center>
 
@@ -774,7 +774,7 @@
 <h2 id="6-正定二次型"><a href="#6-正定二次型" class="headerlink" title="6. 正定二次型"></a>6. 正定二次型</h2><h3 id="6-1-定义"><a href="#6-1-定义" class="headerlink" title="6.1 定义"></a>6.1 定义</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304131804.png" width="50%" height="50%"></center>
 
 <p>从图像上看，这是正定：</p>
-<p><img src="https://pic4.zhimg.com/v2-ebdfb7c7510ac85a582d6e79c1ef37b3_r.jpg?source=1940ef5c" alt=""></p>
+<p><img src="https://pic4.zhimg.com/v2-ebdfb7c7510ac85a582d6e79c1ef37b3_r.jpg?source=1940ef5c" alt></p>
 <h3 id="6-2-定理"><a href="#6-2-定理" class="headerlink" title="6.2 定理"></a>6.2 定理</h3><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132016.png" width="50%" height="50%"></center>
 
 <h3 id="6-3-判定"><a href="#6-3-判定" class="headerlink" title="6.3 判定"></a>6.3 判定</h3><h4 id="法1：转换为标准型，通过等价条件"><a href="#法1：转换为标准型，通过等价条件" class="headerlink" title="法1：转换为标准型，通过等价条件"></a>法1：转换为标准型，通过等价条件</h4><center> <img src="https://cdn.jsdelivr.net/gh/SzUp/pict@master/blog_pict/20210304132200.png" width="50%" height="50%"></center>
@@ -1311,7 +1311,7 @@
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: SzUp<br />'
+            + '来源: 小苏同学<br />'
             + '文章作者: SzUp<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
